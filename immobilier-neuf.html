@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Immobilier neuf à Chartres · CENTURY 21 Maitrejean Immobilier</title>
+<meta name="description" content="Programmes immobiliers neufs à Chartres et ses alentours : appartements et maisons, du studio au 5 pièces. Sélection, accompagnement et guide de l'immobilier neuf.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+.hero .bg{background-image:url(assets/img/n-hero.jpg)}
+.hero .blur{background-image:url(assets/img/n-hero.jpg)}
+.hero .wrap{min-height:420px;padding-bottom:90px;padding-top:40px}
+.hero h1{font-family:var(--display);text-transform:uppercase;font-size:clamp(28px,3.1vw,40px);line-height:1.18}
+.search{--n:3}
+.progs{padding:70px 0 80px}
+.pc .typo{font-size:14px;color:var(--muted)}
+.pc .from{font-size:13px;color:var(--ink);margin:8px 0 16px}
+.pc .from b{font-weight:500}
+.more-row{display:flex;justify-content:center;margin-top:34px}
+.count{font-size:14px;color:var(--muted);margin:-18px 0 26px}
+.empty{display:none;padding:40px;text-align:center;border:1px dashed var(--line);color:var(--muted)}
+.why{padding:60px 0 70px}
+.why .wrap{display:grid;grid-template-columns:1.1fr 2fr;gap:40px;align-items:center}
+.why h2{font-size:clamp(22px,2.2vw,28px);margin-top:14px;line-height:1.3}
+.why-g{display:grid;grid-template-columns:repeat(4,1fr)}
+.why-g div{text-align:center;padding:0 16px;border-left:1px solid var(--line);font-size:14.5px;color:#444e49}
+.why-g svg{width:34px;height:34px;color:var(--ink);margin:0 auto 14px;display:block}
+.band{--bl:31%}
+.band .im{background-image:url(assets/img/n-living.jpg)}
+@media (max-width:1000px){.why .wrap{grid-template-columns:1fr}.why-g{grid-template-columns:1fr 1fr;row-gap:30px}.why-g div:nth-child(3){border-left:0}}
+@media (max-width:640px){.why-g{grid-template-columns:1fr}.why-g div{border-left:0}}
+</style>
+</head>
+<body data-page="neuf">
+
+<section class="hero">
+  <div class="blur" aria-hidden="true"></div>
+  <div class="bg" role="img" aria-label="Résidence neuve entourée de verdure"></div>
+  <div class="wrap">
+    <p class="kick light rv">Immobilier neuf</p>
+    <h1 class="rv">Des programmes neufs<br>à Chartres et ses alentours</h1>
+    <p class="lead rv">Découvrez notre sélection de programmes immobiliers neufs et trouvez le logement correspondant à votre projet.</p>
+    <div class="ctas rv"><a class="btn btn-sand" href="#programmes">Découvrir notre sélection <svg class="ar"><use href="#i-ar"/></svg></a></div>
+  </div>
+</section>
+
+<div class="wrap">
+  <form class="search rv" id="search">
+    <h2 class="up">Trouvez votre<br>futur logement</h2>
+    <div class="fields">
+      <label><span>Localisation</span><div class="sel"><svg class="i"><use href="#i-pin-o"/></svg><select id="fCity" aria-label="Localisation"><option value="">Ville, quartier…</option></select></div></label>
+      <label><span>Typologie</span><div class="sel"><svg class="i"><use href="#i-home"/></svg><select id="fKind" aria-label="Typologie"><option value="">Appartement / Maison</option><option value="a">Appartement</option><option value="m">Maison</option></select></div></label>
+      <label><span>Budget</span><div class="sel"><svg class="i" viewBox="0 0 24 24"><path d="M6 4h12l-1.5 4h-9zM5 9h14v10a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1z" fill="none" stroke="currentColor" stroke-width="1.5"/></svg><select id="fBudget" aria-label="Budget"><option value="">Votre budget max</option><option value="200000">200 000 €</option><option value="250000">250 000 €</option><option value="300000">300 000 €</option><option value="400000">400 000 €</option><option value="500000">500 000 €</option></select></div></label>
+    </div>
+    <button class="btn btn-green">Rechercher <svg class="ar"><use href="#i-ar"/></svg></button>
+  </form>
+</div>
+
+<section class="progs" id="programmes">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><p class="kick rv">Nos programmes</p><h2 class="t-up rv" id="progTitle">Nos opportunités du moment</h2></div>
+      <a class="lnk rv" href="#programmes" id="toggleAll">Voir tous nos programmes <svg class="ar"><use href="#i-ar"/></svg></a>
+    </div>
+    <p class="count" id="count" hidden></p>
+    <div class="cards" id="grid" style="--c:3;--ar:1.8"></div>
+    <p class="empty" id="empty">Aucun programme ne correspond à ces critères pour le moment. <a href="contact.html?profil=acheteur" style="text-decoration:underline">Parlez-nous de votre projet</a>, nous vous prévenons dès qu'un logement correspond.</p>
+  </div>
+</section>
+
+<section class="guide" id="guide">
+  <div class="bk"><div class="book rv"><img src="assets/img/cover-neuf.jpg" alt="Couverture du guide de l'immobilier neuf CENTURY 21 Maitrejean Immobilier"></div></div>
+  <div class="tx">
+    <p class="kick rv">Guide pratique</p>
+    <h2 class="t-up rv" style="font-size:clamp(22px,2.2vw,28px);margin-top:12px">Votre guide de l'immobilier neuf</h2>
+    <p class="rv">Acheter dans le neuf soulève de nombreuses questions : financement, garanties, frais de notaire, TVA, livraison… Nous avons rassemblé l'essentiel dans un guide pratique.</p>
+    <a class="btn btn-green rv" href="assets/guides/guide-immobilier-neuf.pdf" download="Guide de l'immobilier neuf - CENTURY 21 Maitrejean.pdf">Télécharger gratuitement le guide <svg class="ar"><use href="#i-dl"/></svg></a>
+  </div>
+  <ul class="rv">
+    <li><svg><use href="#i-check"/></svg>Les avantages du neuf</li>
+    <li><svg><use href="#i-check"/></svg>Le financement</li>
+    <li><svg><use href="#i-check"/></svg>Les garanties</li>
+    <li><svg><use href="#i-check"/></svg>Les frais de notaire</li>
+    <li><svg><use href="#i-check"/></svg>La TVA et les dispositifs</li>
+    <li><svg><use href="#i-check"/></svg>La livraison</li>
+  </ul>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div><p class="kick rv">Pourquoi nous choisir ?</p><h2 class="up rv">Un accompagnement sur-mesure pour votre projet immobilier</h2></div>
+    <div class="why-g">
+      <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"><path d="M2 10.5 6 7l3 1.5 3-1.5 3.5 1L20 6l2 4.5-3 2.5-4.5 4a1.5 1.5 0 0 1-2.1 0l-.4-.4-1 1a1.4 1.4 0 0 1-2-2l-.5.4a1.4 1.4 0 0 1-2-2L5.5 14z"/><path d="M12 7.5 9 11a1.5 1.5 0 0 0 2.2 2l2.3-2.2 4 3.7"/></svg>Une expertise<br>locale</div>
+      <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4.5 21c0-4 3.4-6.5 7.5-6.5s7.5 2.5 7.5 6.5z"/></svg>Des conseillers<br>à l'écoute</div>
+      <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"><path d="M12 2.8 4.5 5.5v6c0 4.6 3.2 8.3 7.5 9.7 4.3-1.4 7.5-5.1 7.5-9.7v-6z"/><path d="m8.5 12 2.4 2.4 4.6-4.9" stroke-linecap="round"/></svg>Des projets sécurisés<br>et encadrés</div>
+      <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"><path d="M6.5 4h11l4 5.2L12 20.5 2.5 9.2z"/><path d="M2.5 9.2h19M9 9.2 12 20.5l3-11.3M6.5 4 9 9.2 12 4l3 5.2L17.5 4"/></svg>Un accompagnement<br>de la recherche à la livraison</div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="im" role="img" aria-label="Salon lumineux d'un appartement neuf"></div>
+  <div class="in on-dark">
+    <div><p class="kick light rv">Une question ?</p><h2 class="t-up rv" style="font-size:clamp(24px,2.4vw,30px)">Parlons de votre projet</h2><p class="rv">Notre équipe est à votre disposition pour vous accompagner dans votre projet d'achat immobilier neuf.</p>
+      <a class="btn btn-sand rv" style="margin-top:22px" href="contact.html?profil=acheteur&amp;guide=neuf">Contactez-nous <svg class="ar"><use href="#i-ar"/></svg></a></div>
+  </div>
+  <svg class="mark" aria-hidden="true"><use href="#c21-seal"/></svg>
+</section>
+
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/progs-data.js"></script>
+<script>
+const P=window.PROGS||[];
+const eur=n=>n.toLocaleString('fr-FR').replace(/ | /g,' ')+' €';
+const grid=document.getElementById('grid'),empty=document.getElementById('empty'),count=document.getElementById('count');
+const card=p=>`<article class="pc rv"><a class="ph" href="programme.html?id=${p.id}">${p.imgs[0]?`<img src="${p.imgs[0]}" alt="${p.name}, ${p.city}" loading="lazy">`:''}<span class="tag">${p.kind}</span></a>
+  <div class="bd"><span class="loc">${p.city}${p.quarter?' · '+p.quarter:''}</span><h3 class="up">${p.name}</h3><span class="typo">${p.typo}</span>
+  <p class="from">${p.from?`À partir de <b>${eur(p.from)}</b>`:'Prix : nous consulter'}${p.livraison?` · ${p.livraison}`:''}</p>
+  <a class="lnk" href="programme.html?id=${p.id}">Découvrir le programme <svg class="ar"><use href="#i-ar"/></svg></a></div></article>`;
+let all=false;
+function draw(list){
+  grid.innerHTML=list.map(card).join('');empty.style.display=list.length?'none':'block';
+  reveal(grid);
+}
+function filtered(){
+  const c=fCity.value,k=fKind.value,b=+fBudget.value||0;
+  return P.filter(p=>(!c||p.city===c)&&(!k||(k==='m'?/maison/i.test(p.kind+p.typo):/appart|studio/i.test(p.kind+p.typo)))&&(!b||(p.from&&p.from<=b)));
+}
+function show(list,label){
+  count.hidden=false;count.textContent=label;draw(list);
+  progTitle.textContent='Nos programmes';toggleAll.innerHTML='Voir les opportunités du moment '+AR;all=true;
+}
+[...new Set(P.map(p=>p.city))].sort().forEach(c=>fCity.insertAdjacentHTML('beforeend',`<option>${c}</option>`));
+draw(P.filter(p=>p.featured));
+toggleAll.addEventListener('click',e=>{
+  e.preventDefault();
+  if(all){all=false;count.hidden=true;progTitle.textContent='Nos opportunités du moment';toggleAll.innerHTML='Voir tous nos programmes '+AR;draw(P.filter(p=>p.featured));}
+  else show(P,P.length+' programmes neufs à Chartres et alentours');
+  document.getElementById('programmes').scrollIntoView({behavior:'smooth'});
+});
+search.addEventListener('submit',e=>{
+  e.preventDefault();const l=filtered();
+  show(l,l.length+(l.length>1?' programmes correspondent':' programme correspond')+' à votre recherche');
+  document.getElementById('programmes').scrollIntoView({behavior:'smooth'});
+});
+</script>
+<div id="mq-banner" role="note" style="position:fixed;left:16px;bottom:16px;z-index:2147483000;max-width:calc(100vw - 110px);background:#0a2419;color:#e8d2a0;border:1px solid rgba(232,210,160,.35);border-radius:6px;padding:9px 14px;font:600 12.5px/1.35 system-ui,sans-serif;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)">Maquette de travail Flipster · site non officiel · aucune donnée n’est envoyée</div><style>@media (max-width:640px){#mq-banner{left:10px;bottom:10px;font-size:11px!important}}</style>
+</body>
+</html>

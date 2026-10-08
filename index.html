@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CENTURY 21 Maitrejean Immobilier · Immobilier neuf, viager et patrimoine à Chartres</title>
+<meta name="description" content="À Chartres et ses alentours, CENTURY 21 Maitrejean Immobilier vous accompagne dans vos projets immobiliers et patrimoniaux : immobilier neuf, viager, solutions patrimoniales.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+.hero{min-height:480px}
+.hero .bg{background-image:url(assets/img/a-hero.jpg);width:62%}
+.hero .blur{background-image:url(assets/img/a-hero.jpg)}
+.hero .wrap{min-height:480px;padding-top:40px;padding-bottom:40px}
+.hero h1{font-family:var(--display);text-transform:uppercase;font-size:clamp(30px,3.3vw,42px);line-height:1.12;letter-spacing:.01em}
+.hero h1 b{display:block;font-weight:400;font-size:clamp(54px,6.6vw,86px);line-height:1;color:#cdb98f;margin-top:4px}
+.scroll{position:absolute;right:44px;bottom:30px;z-index:3;color:#fff;width:34px;height:44px;display:grid;place-items:center;animation:bob 2.4s ease-in-out infinite}
+.scroll svg{width:26px;height:26px;transform:rotate(90deg)}
+@keyframes bob{50%{transform:translateY(6px)}}
+
+.intro{padding:80px 0 70px}
+.intro .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.intro h2{font-size:clamp(30px,3.2vw,40px);margin:16px 0 22px}
+.intro p{color:#454f4a;font-size:16.5px;max-width:470px}
+.pillars{display:flex;gap:22px;align-items:center;margin-top:34px;font-family:var(--display);font-size:15px;letter-spacing:.06em}
+.pillars i{width:1px;height:18px;background:#9a9f9b}
+.intro img{width:100%;aspect-ratio:1.14;object-fit:cover}
+
+.univers{padding:30px 0 70px}
+.univers h2{margin:14px 0 30px}
+.u-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.u-card{position:relative;background:#2a3a30;color:#fff;overflow:hidden;display:flex;flex-direction:column;min-height:400px}
+.u-card .im{position:relative;height:250px;background:center/cover no-repeat;transition:transform 1.1s cubic-bezier(.2,.7,.2,1)}
+.u-card .im::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(42,58,48,0) 35%,#2a3a30 100%)}
+.u-card:hover .im{transform:scale(1.04)}
+.u-card .tx{position:relative;margin-top:-92px;padding:0 34px 36px;display:flex;flex-direction:column;flex:1}
+.u-card .n{font-family:var(--display);font-size:15px;opacity:.9}
+.u-card h3{font-family:var(--display);text-transform:uppercase;font-size:22px;margin:16px 0 10px}
+.u-card p{font-size:15px;color:#e5e7e1;min-height:48px}
+.u-card .btn{align-self:flex-start;margin-top:28px;padding:13px 24px}
+
+.anchor{display:grid;grid-template-columns:45% 1fr;background:#efebe4}
+.anchor .im{background:url(assets/img/a-cath.jpg) center/cover;min-height:360px}
+.anchor .tx{padding:60px 70px;display:flex;flex-direction:column;justify-content:center}
+.anchor h2{font-size:clamp(26px,2.6vw,34px);margin:16px 0 16px}
+.anchor p{color:#4b5550;max-width:500px}
+.anchor .pl{display:flex;gap:12px;align-items:center;margin-top:24px;font-family:var(--display);font-size:14px;letter-spacing:.08em;text-transform:uppercase}
+.anchor .pl svg{width:20px;height:20px;color:var(--gold)}
+
+.talk{background:var(--green);color:#fff;padding:70px 0 80px;position:relative;overflow:hidden}
+.talk .mark{position:absolute;right:-90px;top:-30px;width:380px;height:380px;color:rgba(255,255,255,.045)}
+.talk h2{font-size:clamp(28px,2.8vw,36px);margin:16px 0 14px}
+.talk>.wrap>p{color:#e2e6e0;font-size:17px;max-width:520px}
+.who{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:40px}
+.who-c{position:relative;border:1px solid rgba(255,255,255,.42);padding:30px 20px 26px;text-align:center;min-height:200px;display:flex;flex-direction:column;align-items:center;transition:background .35s,border-color .35s}
+.who-c svg.ic{width:30px;height:30px;color:var(--sand);margin-bottom:12px}
+.who-c h3{font-family:var(--sans);font-weight:500;font-size:15px;letter-spacing:.06em;text-transform:uppercase}
+.who-c p{font-size:13.5px;color:#d8ddd7;margin-top:6px;line-height:1.5}
+.who-c .go{margin-top:auto;padding-top:14px;height:52px;display:grid;place-items:center;position:relative;width:100%}
+.who-c .go>svg{width:18px;height:18px;transition:opacity .25s,transform .25s}
+.who-c .go .btn{position:absolute;left:50%;top:50%;transform:translate(-50%,-30%);opacity:0;pointer-events:none;white-space:nowrap;padding:12px 18px;transition:opacity .3s,transform .3s}
+.who-c:hover,.who-c:focus-within{background:rgba(255,255,255,.06);border-color:var(--sand)}
+.who-c:hover .go>svg,.who-c:focus-within .go>svg{opacity:0;transform:translateY(-6px)}
+.who-c:hover .go .btn,.who-c:focus-within .go .btn{opacity:1;pointer-events:auto;transform:translate(-50%,-50%)}
+@media (hover:none){.who-c .go>svg{display:none}.who-c .go .btn{opacity:1;pointer-events:auto;transform:translate(-50%,-50%)}}
+
+@media (max-width:1000px){
+  .intro .wrap{grid-template-columns:1fr;gap:40px}
+  .u-grid,.who{grid-template-columns:1fr 1fr}
+  .anchor{grid-template-columns:1fr}
+  .anchor .tx{padding:50px 40px}
+}
+@media (max-width:640px){
+  .hero,.hero .wrap{min-height:540px}
+  .hero .wrap{justify-content:flex-end;padding-bottom:60px}
+  .u-grid,.who{grid-template-columns:1fr}
+  .pillars{flex-wrap:wrap;gap:12px}
+  .anchor .tx{padding:44px 22px}
+}
+</style>
+</head>
+<body data-page="accueil">
+
+<section class="hero">
+  <div class="blur" aria-hidden="true"></div>
+  <div class="bg" role="img" aria-label="Vue aérienne de Chartres et de sa cathédrale"></div>
+  <div class="wrap">
+    <h1 class="rv">L'immobilier<br>au service de votre <b>patrimoine</b></h1>
+    <p class="lead rv">À Chartres et ses alentours, nous vous accompagnons dans vos projets immobiliers et patrimoniaux.</p>
+    <div class="ctas rv"><a class="btn btn-sand" href="a-propos.html">Découvrir notre approche <svg class="ar"><use href="#i-ar"/></svg></a></div>
+  </div>
+  <a class="scroll" href="#intro" aria-label="Faire défiler"><svg><use href="#i-ar"/></svg></a>
+</section>
+
+<section class="intro" id="intro">
+  <div class="wrap">
+    <div>
+      <p class="kick rv">Maitrejean Immobilier</p>
+      <h2 class="up rv">Plus qu'un bien.<br>Un projet de vie.</h2>
+      <p class="rv">Acheter, vendre, investir ou valoriser son patrimoine sont des décisions importantes. Notre rôle est de vous apporter une vision claire, des solutions adaptées et un accompagnement personnalisé à chaque étape de votre projet.</p>
+      <div class="pillars rv"><span>CONSEILLER</span><i></i><span>ACCOMPAGNER</span><i></i><span>VALORISER</span></div>
+    </div>
+    <img class="rv" src="assets/img/a-door.jpg" alt="La façade de l'agence CENTURY 21 Maitrejean Immobilier, rue Mathurin Régnier à Chartres">
+  </div>
+</section>
+
+<section class="univers">
+  <div class="wrap">
+    <p class="kick rv">Nos 3 univers</p>
+    <h2 class="t-up rv">Des solutions adaptées à vos projets</h2>
+    <div class="u-grid">
+      <article class="u-card rv"><div class="im" style="background-image:url(assets/img/a-u1.jpg)"></div><div class="tx"><span class="n">01</span><h3>Immobilier neuf</h3><p>Habiter ou investir dans le neuf.</p><a class="btn btn-sand" href="immobilier-neuf.html">Découvrir <svg class="ar"><use href="#i-ar"/></svg></a></div></article>
+      <article class="u-card rv"><div class="im" style="background-image:url(assets/img/a-u2.jpg)"></div><div class="tx"><span class="n">02</span><h3>Viager</h3><p>Valoriser son patrimoine autrement.</p><a class="btn btn-sand" href="viager.html">Découvrir <svg class="ar"><use href="#i-ar"/></svg></a></div></article>
+      <article class="u-card rv"><div class="im" style="background-image:url(assets/img/a-u3.jpg)"></div><div class="tx"><span class="n">03</span><h3>Solutions patrimoniales</h3><p>Construire, développer<br>et transmettre.</p><a class="btn btn-sand" href="solutions-patrimoniales.html">Découvrir <svg class="ar"><use href="#i-ar"/></svg></a></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="anchor">
+  <div class="im" role="img" aria-label="La cathédrale de Chartres au-dessus des toits de la ville"></div>
+  <div class="tx">
+    <p class="kick rv">Notre ancrage</p>
+    <h2 class="up rv">Une expertise locale,<br>une vision globale</h2>
+    <p class="rv">Implantés à Chartres depuis près de 20 ans, nous connaissons le marché immobilier local et ses évolutions. Cette connaissance du terrain nous permet de vous accompagner avec une approche concrète et personnalisée.</p>
+    <p class="pl rv"><svg><use href="#i-pin-o"/></svg>Chartres &amp; ses alentours</p>
+  </div>
+</section>
+
+<section class="talk on-dark" id="projet">
+  <svg class="mark" aria-hidden="true"><use href="#c21-seal"/></svg>
+  <div class="wrap">
+    <p class="kick light rv">Vous avez un projet ?</p>
+    <h2 class="up rv">Parlons de votre projet</h2>
+    <p class="rv">Vente, acquisition, investissement ou projet patrimonial :<br>échangeons simplement sur vos objectifs.</p>
+    <div class="who">
+      <article class="who-c rv">
+        <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 11.5 9 7l4 3 3-2 5 3.5"/><path d="M3 11.5V18h18v-6.5"/><path d="M8 18v-4h4v4"/><path d="M15.5 13.5h2v2h-2z"/></svg>
+        <h3>Vendeur</h3><p>Vous souhaitez vendre<br>votre bien ?</p>
+        <div class="go"><svg><use href="#i-ar"/></svg><a class="btn btn-sand" href="contact.html?profil=vendeur">Nous contacter <svg class="ar"><use href="#i-ar"/></svg></a></div>
+      </article>
+      <article class="who-c rv">
+        <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3 2.5 11h2.5v9h5v-5.5h4V20h5v-9h2.5z"/></svg>
+        <h3>Acquéreur</h3><p>Vous recherchez votre<br>futur logement ?</p>
+        <div class="go"><svg><use href="#i-ar"/></svg><a class="btn btn-sand" href="contact.html?profil=acheteur">Nous contacter <svg class="ar"><use href="#i-ar"/></svg></a></div>
+      </article>
+      <article class="who-c rv">
+        <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><path d="M4 20V13h3v7zm5 0V10h3v10zm5 0v-6h3v6zm5 0V7h-2.4l3.4-3.5L23.4 7H21v13z" transform="translate(-1 0)"/></svg>
+        <h3>Investisseur</h3><p>Vous souhaitez développer<br>votre patrimoine ?</p>
+        <div class="go"><svg><use href="#i-ar"/></svg><a class="btn btn-sand" href="contact.html?profil=investisseur">Nous contacter <svg class="ar"><use href="#i-ar"/></svg></a></div>
+      </article>
+      <article class="who-c rv">
+        <svg class="ic" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="6.5" r="3.5"/><path d="M5 21v-3.5c0-2.5 3-4.5 7-4.5s7 2 7 4.5V21z"/><path d="M10.5 13.5h3l-.7 2.5h-1.6z" fill="#26392f"/></svg>
+        <h3>Professionnel</h3><p>Vous souhaitez échanger<br>avec notre équipe ?</p>
+        <div class="go"><svg><use href="#i-ar"/></svg><a class="btn btn-sand" href="contact.html?profil=professionnel">Nous contacter <svg class="ar"><use href="#i-ar"/></svg></a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<script src="assets/js/layout.js"></script>
+<div id="mq-banner" role="note" style="position:fixed;left:16px;bottom:16px;z-index:2147483000;max-width:calc(100vw - 110px);background:#0a2419;color:#e8d2a0;border:1px solid rgba(232,210,160,.35);border-radius:6px;padding:9px 14px;font:600 12.5px/1.35 system-ui,sans-serif;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)">Maquette de travail Flipster · site non officiel · aucune donnée n’est envoyée</div><style>@media (max-width:640px){#mq-banner{left:10px;bottom:10px;font-size:11px!important}}</style>
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Solutions patrimoniales · CENTURY 21 Maitrejean Immobilier</title>
+<meta name="description" content="Réduire sa fiscalité, développer son patrimoine, préparer sa retraite, transmettre : Denormandie, Relance logement (Jeanbrun), déficit foncier, Malraux, monuments historiques, nue-propriété, LMNP, SCPI.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+.hero .bg{background-image:url(assets/img/s-hero.jpg)}
+.hero .blur{background-image:url(assets/img/s-hero.jpg)}
+.hero .wrap{min-height:400px;padding-top:30px;padding-bottom:40px}
+.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(36px,4.2vw,56px);line-height:1.05;letter-spacing:-.01em}
+.btn-dk{background:rgba(30,46,38,.85);border:1px solid rgba(255,255,255,.55);color:#fff}.btn-dk:hover{background:var(--green)}
+.goals{padding:40px 0 50px}
+.goals h2{margin:10px 0 24px}
+.g-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.g-c{background:var(--card);border:1px solid var(--line);padding:26px 24px 22px;display:flex;flex-direction:column;transition:transform .35s,box-shadow .35s,border-color .35s}
+.g-c:hover{transform:translateY(-4px);box-shadow:0 26px 50px -34px rgba(20,30,25,.5);border-color:#d3c8b2}
+.g-c svg.ic{width:38px;height:38px;color:var(--ink);margin-bottom:22px}
+.g-c h3{font-family:var(--display);text-transform:uppercase;font-size:15.5px;letter-spacing:.03em}
+.g-c p{font-size:14px;color:#4b5550;margin-top:10px;flex:1}
+.g-c .go{align-self:flex-end;margin-top:6px}
+.g-c .go svg{width:16px;height:16px;transition:transform .25s}
+.g-c:hover .go svg{transform:translateX(4px)}
+.disp{display:grid;grid-template-columns:27.5% 1fr;background:#efebe4}
+.disp .lp{display:flex;flex-direction:column;background:var(--green-d)}
+.disp .lp .im{flex:1;min-height:200px;background:url(assets/img/s-left.jpg) center/cover}
+.disp .lp .tx{padding:26px 34px 30px;color:#fff}
+.disp .lp h2{font-family:var(--serif);font-weight:500;font-size:clamp(24px,2.3vw,30px);margin:10px 0 0;line-height:1.15}
+.disp .rp{padding:30px 40px 44px}
+.d-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:20px}
+.d-c{background:var(--card);border:1px solid var(--line);display:flex;flex-direction:column;transition:transform .35s,box-shadow .35s}
+.d-c:hover{transform:translateY(-4px);box-shadow:0 26px 50px -34px rgba(20,30,25,.5)}
+.d-c .im{aspect-ratio:1.55;overflow:hidden}
+.d-c .im img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.d-c:hover .im img{transform:scale(1.05)}
+.d-c .bd{padding:14px 16px 14px;display:flex;flex-direction:column;flex:1}
+.d-c h3{font-family:var(--sans);font-weight:500;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase}
+.d-c p{font-size:13px;color:#5b655f;margin-top:8px;flex:1;line-height:1.5}
+.d-c .go{margin-top:12px}
+.d-c .go svg{width:15px;height:15px;transition:transform .25s}
+.d-c:hover .go svg{transform:translateX(4px)}
+.future{display:grid;grid-template-columns:24.3% 27% 17.2% 1fr;background:#f1eee8}
+.future .im{background:center/cover;min-height:170px}
+.future .dk{background:var(--green);color:#fff;padding:22px 38px;display:flex;flex-direction:column;justify-content:center}
+.future .lt{padding:22px 40px;display:flex;flex-direction:column;justify-content:center}
+.future h2{font-family:var(--serif);font-weight:500;font-size:clamp(22px,2vw,27px);line-height:1.15;margin:10px 0 8px}
+.future p{font-size:13.5px}
+.future .dk p{color:#e0e5df}
+.future .lt p{color:#4b5550}
+.future .btn{align-self:flex-start;margin-top:18px;padding:11px 18px;font-size:11px}
+.kick.sm{font-size:10.5px}
+.steps{padding:30px 0 40px}
+.steps h2{margin:10px 0 22px}
+.st{display:grid;grid-template-columns:repeat(4,1fr)}
+.st div{display:flex;gap:16px;padding:0 24px;border-left:1px solid var(--line)}
+.st div:first-child{border-left:0;padding-left:0}
+.st b{flex:none;width:30px;height:30px;border-radius:50%;background:#cdb995;color:#fff;font-weight:400;font-family:var(--display);display:grid;place-items:center;font-size:13px}
+.st h4{font-weight:500;font-size:14px}
+.st p{font-size:13px;color:#5b655f}
+.band{--bl:38.3%}
+.band .im{background-image:url(assets/img/s-cath.jpg)}
+.band h2{font-family:var(--serif);font-weight:500;font-size:clamp(24px,2.3vw,30px)}
+@media (max-width:1150px){.g-grid,.d-grid{grid-template-columns:repeat(2,1fr)}.disp{grid-template-columns:1fr}.disp .lp{flex-direction:row}.disp .lp .im{min-height:220px}.future{grid-template-columns:1fr 1fr}.st{grid-template-columns:1fr 1fr;row-gap:24px}.st div:nth-child(3){border-left:0;padding-left:0}}
+@media (max-width:640px){.g-grid,.d-grid{grid-template-columns:1fr}.disp .lp{flex-direction:column}.disp .rp{padding:30px 20px}.future{grid-template-columns:1fr}.future .im{min-height:200px}.st{grid-template-columns:1fr}.st div{border-left:0;padding-left:0}}
+</style>
+</head>
+<body data-page="patrimoine">
+
+<section class="hero">
+  <div class="blur" aria-hidden="true"></div>
+  <div class="bg" role="img" aria-label="Vue aérienne de Chartres et de sa cathédrale"></div>
+  <div class="wrap">
+    <p class="kick light rv">Solutions patrimoniales</p>
+    <h1 class="rv">Construire, développer<br>et transmettre<br>votre patrimoine</h1>
+    <p class="lead rv">Des solutions adaptées à vos objectifs,<br>à votre situation et à votre horizon.</p>
+    <div class="ctas rv"><a class="btn btn-dk" href="contact.html?profil=investisseur">Échanger sur mon projet <svg class="ar"><use href="#i-ar"/></svg></a></div>
+  </div>
+</section>
+
+<section class="goals">
+  <div class="wrap">
+    <p class="kick rv">Votre objectif</p>
+    <h2 class="t-sr rv">Que souhaitez-vous accomplir ?</h2>
+    <div class="g-grid">
+      <a class="g-c rv" href="#dispositifs"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><ellipse cx="14" cy="5.5" rx="6" ry="2.5"/><path d="M8 5.5v3c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5v-3M8 8.5v3c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5v-3"/><ellipse cx="9" cy="14.5" rx="6" ry="2.5"/><path d="M3 14.5v3c0 1.4 2.7 2.5 6 2.5s6-1.1 6-2.5v-3"/></svg><h3>Réduire ma fiscalité</h3><p>Identifier les dispositifs permettant de maîtriser sa fiscalité.</p><span class="go"><svg><use href="#i-ar"/></svg></span></a>
+      <a class="g-c rv" href="#dispositifs"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"><path d="M3 11 12 3.5 21 11M5.5 9v11.5h13V9"/><path d="M10 20.5v-6h4v6"/></svg><h3>Développer mon patrimoine</h3><p>Investir et construire progressivement un patrimoine.</p><span class="go"><svg><use href="#i-ar"/></svg></span></a>
+      <a class="g-c rv" href="#avenir"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M12 21V9"/><path d="M12 13c-4 0-6.5-2.5-6.5-6.5 4 0 6.5 2.5 6.5 6.5zM12 11c0-3.5 2.2-6 6.5-6 0 3.5-2.4 6-6.5 6zM12 17c-2.6 0-5-1.6-5-4.5 2.8 0 5 1.6 5 4.5zM12 15.5c0-2.6 2.2-4.2 5-4.2 0 2.7-2.3 4.2-5 4.2z"/></svg><h3>Préparer ma retraite</h3><p>Anticiper la création de revenus complémentaires.</p><span class="go"><svg><use href="#i-ar"/></svg></span></a>
+      <a class="g-c rv" href="#transmettre"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="6" r="2.6"/><circle cx="5.5" cy="9" r="2.1"/><circle cx="18.5" cy="9" r="2.1"/><path d="M7.5 20v-3.5c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5V20zM2 20v-2.5c0-2 1.6-3.5 3.5-3.5 1 0 1.8.3 2.4.9M22 20v-2.5c0-2-1.6-3.5-3.5-3.5-1 0-1.8.3-2.4.9"/><path d="M2 20h20"/></svg><h3>Transmettre mon patrimoine</h3><p>Préparer et organiser la transmission de son patrimoine.</p><span class="go"><svg><use href="#i-ar"/></svg></span></a>
+    </div>
+  </div>
+</section>
+
+<section class="disp" id="dispositifs">
+  <div class="lp">
+    <div class="im" role="img" aria-label="Façades du centre historique de Chartres"></div>
+    <div class="tx"><p class="kick light sm">Fiscalité &amp; investissement</p><h2>Des dispositifs pour investir autrement</h2></div>
+  </div>
+  <div class="rp">
+    <p class="kick rv">Nos dispositifs</p>
+    <div class="d-grid" id="dgrid"></div>
+  </div>
+</section>
+
+<section class="future" id="avenir">
+  <div class="im" style="background-image:url(assets/img/s-woman.jpg)" role="img" aria-label="Les jardins et la ville basse de Chartres"></div>
+  <div class="dk on-dark"><p class="kick light sm">Préparer l'avenir</p><h2>Anticiper aujourd'hui<br>les projets de demain</h2><p>Retraite, revenus complémentaires, diversification…</p></div>
+  <div class="im" style="background-image:url(assets/img/s-hands.jpg)" role="img" aria-label="Séjour d'un logement neuf"></div>
+  <div class="lt" id="transmettre"><p class="kick sm">Transmettre</p><h2>Anticiper pour mieux<br>transmettre</h2><p>Donation, démembrement, organisation du patrimoine…</p><a class="btn btn-sand" href="contact.html?profil=investisseur">Échanger sur ma situation <svg class="ar"><use href="#i-ar"/></svg></a></div>
+</section>
+
+<section class="steps">
+  <div class="wrap">
+    <p class="kick rv">Notre approche</p>
+    <h2 class="t-sr rv" style="font-size:clamp(26px,2.4vw,32px)">Une démarche simple et personnalisée</h2>
+    <div class="st">
+      <div class="rv"><b>01</b><span><h4>Comprendre</h4><p>votre situation et vos objectifs.</p></span></div>
+      <div class="rv"><b>02</b><span><h4>Identifier</h4><p>les solutions adaptées<br>à votre projet.</p></span></div>
+      <div class="rv"><b>03</b><span><h4>Comparer</h4><p>avantages, contraintes<br>et horizon.</p></span></div>
+      <div class="rv"><b>04</b><span><h4>Construire</h4><p>votre projet immobilier<br>et patrimonial.</p></span></div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="im" role="img" aria-label="La cathédrale de Chartres et la ville"></div>
+  <div class="in on-dark">
+    <div><p class="kick light rv">Un projet immobilier ou patrimonial ?</p><h2 class="rv">Votre patrimoine mérite une stratégie<br>qui vous ressemble.</h2><p class="rv">Parlons simplement de votre projet.</p></div>
+    <div class="side"><a class="btn btn-sand" href="contact.html?profil=investisseur">Prendre rendez-vous <svg class="ar"><use href="#i-ar"/></svg></a><span>Étude personnalisée<br>et confidentielle</span></div>
+  </div>
+</section>
+
+<script src="assets/js/layout.js"></script>
+<script>
+const D=[
+ ['d1','Denormandie','Objectif : réduire son impôt sur le revenu'],
+ ['d2','Relance logement (Jeanbrun)','Objectif : investir dans le locatif avec un avantage fiscal'],
+ ['d3','Déficit foncier','Objectif : réduire son revenu imposable'],
+ ['d4','Malraux','Objectif : réduire son impôt en rénovant un bien'],
+ ['d5','Monuments historiques','Objectif : optimiser sa fiscalité'],
+ ['d6','Nue-propriété','Objectif : acquérir un patrimoine à prix décoté'],
+ ['d7','LMNP','Objectif : développer un patrimoine avec des revenus locatifs'],
+ ['d8','SCPI','Objectif : investir dans l\'immobilier sans acheter directement un bien'],
+];
+document.getElementById('dgrid').innerHTML=D.map(([i,t,o])=>`<a class="d-c rv" href="contact.html?profil=investisseur&programme=${encodeURIComponent('Dispositif '+t)}" title="Échanger sur le dispositif ${t}">
+  <div class="im"><img src="assets/img/${i}.jpg" alt="" loading="lazy"></div><div class="bd"><h3>${t}</h3><p>${o}</p><span class="go"><svg><use href="#i-ar"/></svg></span></div></a>`).join('');
+reveal(document.getElementById('dgrid'));
+</script>
+<div id="mq-banner" role="note" style="position:fixed;left:16px;bottom:16px;z-index:2147483000;max-width:calc(100vw - 110px);background:#0a2419;color:#e8d2a0;border:1px solid rgba(232,210,160,.35);border-radius:6px;padding:9px 14px;font:600 12.5px/1.35 system-ui,sans-serif;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)">Maquette de travail Flipster · site non officiel · aucune donnée n’est envoyée</div><style>@media (max-width:640px){#mq-banner{left:10px;bottom:10px;font-size:11px!important}}</style>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Programme neuf · CENTURY 21 Maitrejean Immobilier</title>
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+.crumbs{font-size:13px;color:var(--muted);padding:26px 0 20px;display:flex;gap:8px;flex-wrap:wrap}
+.crumbs a:hover{color:var(--ink);text-decoration:underline}
+.ph-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;padding-bottom:26px}
+.ph-head h1{font-family:var(--display);text-transform:uppercase;font-size:clamp(28px,3.2vw,42px);margin:10px 0 8px}
+.ph-head .typo{color:var(--muted)}
+.ph-head .pr{text-align:right}
+.ph-head .pr small{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.ph-head .pr b{font-family:var(--display);font-weight:400;font-size:clamp(26px,2.6vw,34px)}
+.badge{display:inline-block;background:var(--green);color:#fff;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:3px;margin-top:10px}
+.gal{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:230px 230px;gap:8px;position:relative}
+.gal button{border:0;padding:0;overflow:hidden;cursor:zoom-in;background:#ddd}
+.gal button:first-child{grid-row:1/3}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.gal button:hover img{transform:scale(1.04)}
+.gal .all{position:absolute;right:14px;bottom:14px;background:#fff;border:0;padding:10px 16px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+.gal.n1{grid-template-columns:1fr;grid-template-rows:460px}.gal.n2{grid-template-columns:2fr 1fr}.gal.n3{grid-template-columns:2fr 1fr}
+.main{display:grid;grid-template-columns:1fr 360px;gap:60px;padding:50px 0 80px;align-items:start}
+.blk{padding:30px 0;border-top:1px solid var(--line)}
+.blk:first-child{border-top:0;padding-top:0}
+.blk h2{font-family:var(--display);text-transform:uppercase;font-size:20px;margin-bottom:16px}
+.blk .hd2{font-family:var(--serif);font-size:24px;font-weight:500;margin-bottom:14px}
+.blk p{color:#3d4742;margin-bottom:12px;max-width:68ch}
+.lots{list-style:none;display:grid;gap:8px}
+.lots li{display:flex;justify-content:space-between;gap:16px;background:#fff;border:1px solid var(--line);padding:14px 18px;font-size:15px}
+.lots li b{font-weight:500;white-space:nowrap}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--sand-l);padding:7px 13px;font-size:13.5px;border-radius:2px}
+.eq{list-style:none;display:grid;gap:8px}
+.eq li{display:flex;gap:10px;font-size:15px;color:#3d4742}
+.eq li svg{width:16px;height:16px;flex:none;margin-top:4px;color:var(--gold)}
+.side{position:sticky;top:100px;display:grid;gap:16px}
+.agent{background:var(--green);color:#fff;padding:28px}
+.agent .top{display:flex;gap:16px;align-items:center;margin-bottom:18px}
+.agent img{width:76px;height:76px;object-fit:cover;object-position:50% 20%;border-radius:50%;filter:grayscale(1)}
+.agent b{display:block;font-family:var(--display);font-weight:400;font-size:19px;text-transform:uppercase;letter-spacing:.02em}
+.agent .r{font-size:12.5px;color:var(--sand);letter-spacing:.06em;text-transform:uppercase}
+.agent a.l{display:flex;justify-content:space-between;padding:10px 0;border-top:1px solid rgba(255,255,255,.12);font-size:14px}
+.agent a.l span{color:#cfd6d0}
+.agent .btn{width:100%;justify-content:center;margin-top:16px}
+.mini{background:#fff;border:1px solid var(--line);padding:22px;font-size:14px;color:var(--muted)}
+.mini a{color:var(--ink);text-decoration:underline}
+.others{background:#ece7de;padding:70px 0}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(14,20,17,.95);display:none;align-items:center;justify-content:center}
+.lb.on{display:flex}
+.lb img{max-width:92vw;max-height:84vh;object-fit:contain}
+.lb button{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;width:50px;height:50px;border-radius:50%;cursor:pointer;font-size:22px}
+.lb .p{left:24px;top:50%}.lb .n{right:24px;top:50%}.lb .x{right:24px;top:24px}
+.lb .c{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:#cfd6d0;font-size:14px}
+.nf{padding:120px 0;text-align:center}
+@media (max-width:1000px){.main{grid-template-columns:1fr;gap:30px}.side{position:static}}
+@media (max-width:640px){.gal{grid-template-columns:1fr 1fr;grid-template-rows:240px 110px}.gal button:first-child{grid-column:1/3;grid-row:1}.gal button:nth-child(n+4){display:none}.ph-head .pr{text-align:left}}
+</style>
+</head>
+<body data-page="neuf">
+<main id="app"></main>
+<div class="lb" id="lb"><button class="x" aria-label="Fermer">×</button><button class="p" aria-label="Photo précédente">‹</button><img alt=""><button class="n" aria-label="Photo suivante">›</button><p class="c"></p></div>
+
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/progs-data.js"></script>
+<script>
+const P=window.PROGS||[],id=new URLSearchParams(location.search).get('id'),p=P.find(x=>x.id===id);
+const eur=n=>n.toLocaleString('fr-FR').replace(/ | /g,' ')+' €';
+const app=document.getElementById('app');
+const ck='<svg><use href="#i-check"/></svg>';
+if(!p){app.innerHTML=`<div class="wrap nf"><h1 class="t-up">Programme introuvable</h1><p style="margin:16px 0 26px">Ce programme n'est plus disponible.</p><a class="btn btn-green" href="immobilier-neuf.html#programmes">Voir nos programmes ${AR}</a></div>`;}
+else{
+  document.title=`${p.name} · ${p.city} · Programme neuf CENTURY 21 Maitrejean`;
+  const g=p.imgs.slice(0,5);
+  const others=P.filter(x=>x.id!==p.id&&x.city===p.city).concat(P.filter(x=>x.id!==p.id&&x.city!==p.city)).slice(0,3);
+  app.innerHTML=`<div class="wrap">
+    <nav class="crumbs" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a><span>›</span><a href="immobilier-neuf.html">Immobilier neuf</a><span>›</span><span>${p.name}</span></nav>
+    <div class="ph-head"><div><p class="kick">${p.city}${p.quarter?' · '+p.quarter:''}</p><h1>${p.name}</h1><span class="typo">${p.typo}</span><br>${p.livraison?`<span class="badge">${p.livraison}</span>`:''}</div>
+      <div class="pr"><small>${p.from?'À partir de':'Prix'}</small><b>${p.from?eur(p.from):'Nous consulter'}</b></div></div>
+    <div class="gal n${Math.min(g.length,5)}" id="gal">${g.map((s,i)=>`<button data-i="${i}" aria-label="Agrandir la photo ${i+1}"><img src="${s}" alt="${p.name}, visuel ${i+1}"${i?' loading="lazy"':''}></button>`).join('')}${p.imgs.length>1?`<button class="all" data-i="0">Voir les ${p.imgs.length} visuels</button>`:''}</div>
+    <div class="main">
+      <div>
+        <div class="blk">${p.head?`<p class="hd2">${p.head}</p>`:''}${p.desc.map(d=>`<p>${d}</p>`).join('')}</div>
+        ${p.lots.length?`<div class="blk"><h2>Les lots disponibles</h2><ul class="lots">${p.lots.map(l=>{const m=l.match(/^(.*?)\s*à partir de\s*(.*)$/);return `<li><span>${m?m[1]:l}</span>${m?`<b>dès ${m[2]}</b>`:''}</li>`}).join('')}</ul></div>`:''}
+        ${p.tags.length?`<div class="blk"><h2>Prestations et avantages</h2><div class="chips">${p.tags.map(t=>`<span>${t}</span>`).join('')}</div></div>`:''}
+        ${p.equip.length?`<div class="blk"><h2>Les équipements</h2><ul class="eq">${p.equip.map(e=>/:\s*$/.test(e)?`<li style="display:block;font-weight:500;color:var(--ink)">${e}</li>`:`<li>${ck}<span>${e}</span></li>`).join('')}</ul></div>`:''}
+      </div>
+      <aside class="side">
+        <div class="agent"><div class="top"><img src="assets/img/raphael-lecoeur.jpg" alt="Raphaël Lecoeur"><div><b>Raphaël Lecoeur</b><span class="r">Conseiller commercial neuf<br>et investissement</span></div></div>
+          <a class="l" href="tel:+33644126408"><span>Ligne directe</span>06 44 12 64 08</a><a class="l" href="tel:+33237992121"><span>Agence</span>02 37 99 21 21</a>
+          <a class="btn btn-sand" href="contact.html?profil=acheteur&guide=neuf&programme=${encodeURIComponent(p.name)}">Être recontacté ${AR}</a></div>
+        <div class="mini">Le guide de l'immobilier neuf répond aux questions sur le financement, les garanties, la TVA et la livraison. <a href="assets/guides/guide-immobilier-neuf.pdf" download>Télécharger le guide</a><br><br>Fiche reprise du site <a href="${p.src}" target="_blank" rel="noopener">maitrejean-immobilier-neuf.fr</a>.</div>
+      </aside>
+    </div></div>
+    <section class="others"><div class="wrap"><div class="sec-h"><div><p class="kick">Nos programmes</p><h2 class="t-up">D'autres programmes neufs</h2></div><a class="lnk" href="immobilier-neuf.html#programmes">Tous nos programmes ${AR}</a></div>
+      <div class="cards" style="--c:3;--ar:1.8">${others.map(o=>`<article class="pc"><a class="ph" href="programme.html?id=${o.id}">${o.imgs[0]?`<img src="${o.imgs[0]}" alt="${o.name}" loading="lazy">`:''}<span class="tag">${o.kind}</span></a><div class="bd"><span class="loc">${o.city}${o.quarter?' · '+o.quarter:''}</span><h3 class="up">${o.name}</h3><span style="font-size:14px;color:var(--muted);margin-bottom:16px">${o.typo}</span><a class="lnk" href="programme.html?id=${o.id}">Découvrir le programme ${AR}</a></div></article>`).join('')}</div></div></section>`;
+  // lightbox
+  const lb=document.getElementById('lb'),im=lb.querySelector('img'),c=lb.querySelector('.c');let k=0;
+  const set=i=>{k=(i+p.imgs.length)%p.imgs.length;im.src=p.imgs[k];im.alt=p.name+', visuel '+(k+1);c.textContent=(k+1)+' / '+p.imgs.length};
+  document.getElementById('gal').addEventListener('click',e=>{const b=e.target.closest('[data-i]');if(!b)return;set(+b.dataset.i);lb.classList.add('on')});
+  lb.querySelector('.x').onclick=()=>lb.classList.remove('on');lb.querySelector('.p').onclick=()=>set(k-1);lb.querySelector('.n').onclick=()=>set(k+1);
+  addEventListener('keydown',e=>{if(!lb.classList.contains('on'))return;if(e.key==='Escape')lb.classList.remove('on');if(e.key==='ArrowLeft')set(k-1);if(e.key==='ArrowRight')set(k+1)});
+}
+</script>
+<div id="mq-banner" role="note" style="position:fixed;left:16px;bottom:16px;z-index:2147483000;max-width:calc(100vw - 110px);background:#0a2419;color:#e8d2a0;border:1px solid rgba(232,210,160,.35);border-radius:6px;padding:9px 14px;font:600 12.5px/1.35 system-ui,sans-serif;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)">Maquette de travail Flipster · site non officiel · aucune donnée n’est envoyée</div><style>@media (max-width:640px){#mq-banner{left:10px;bottom:10px;font-size:11px!important}}</style>
+</body>
+</html>

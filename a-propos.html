@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>À propos · CENTURY 21 Maitrejean Immobilier</title>
+<meta name="description" content="À Chartres et dans les communes alentours, CENTURY 21 Maitrejean Immobilier accompagne chaque projet immobilier avec une approche fondée sur l'écoute, le conseil et la connaissance du marché local.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+.hero .bg{background-image:url(assets/img/p-hero.jpg);width:64%}
+.hero .blur{background-image:url(assets/img/p-hero.jpg)}
+.hero .wrap{min-height:420px;padding-top:30px;padding-bottom:40px}
+.hero h1{font-family:var(--serif);font-weight:500;font-size:clamp(36px,4vw,52px);line-height:1.05}
+.story{padding:40px 0 50px}
+.story .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:60px;align-items:center}
+.story h2{margin:12px 0 20px}
+.story p{color:#4b5550;max-width:430px;font-size:15px}
+.story p b{font-weight:500;color:var(--ink)}
+.story .lnk{text-transform:none;letter-spacing:0;font-size:15px;margin-top:24px}
+.store{position:relative}
+.store .im{background:url(assets/img/p-store.jpg) center/cover;min-height:300px;margin-right:110px}
+.store .box{position:absolute;right:0;bottom:0;width:190px;background:#f3f0ea;padding:20px 20px;font-size:12px;color:#5b655f;box-shadow:-20px -20px 40px -30px rgba(0,0,0,.25)}
+.store .box svg{width:22px;height:22px;color:var(--ink);margin-bottom:12px}
+.store .box b{display:block;font-family:var(--display);font-weight:400;font-size:13.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink);margin-bottom:10px}
+.approach{background:#efebe4;padding:40px 0 30px}
+.approach .wrap{display:grid;grid-template-columns:.85fr 1.15fr;gap:40px;align-items:center}
+.approach h2{margin:12px 0 18px}
+.approach p{color:#4b5550;font-size:14.5px;max-width:440px}
+.ap-g{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.ap-g div{background:var(--card);border:1px solid var(--line);padding:22px 18px;font-size:13px;color:#5b655f}
+.ap-g svg{width:32px;height:32px;color:var(--ink);margin-bottom:18px}
+.ap-g h3{font-family:var(--display);text-transform:uppercase;font-size:14px;color:var(--ink);margin-bottom:8px;letter-spacing:.03em}
+.dom{display:grid;grid-template-columns:1fr 19.6%;background:var(--green);color:#fff}
+.dom .in{padding:30px 34px 40px 48px}
+.dom h2{font-family:var(--serif);font-weight:500;font-size:clamp(26px,2.5vw,32px);margin:12px 0 22px;line-height:1.1}
+.dom .side{background:url(assets/img/p-cafe.jpg) center/cover}
+.e-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.e-c{background:var(--card);color:var(--ink);display:flex;flex-direction:column;transition:transform .35s,box-shadow .35s}
+.e-c:hover{transform:translateY(-4px);box-shadow:0 26px 50px -30px rgba(0,0,0,.6)}
+.e-c .im{aspect-ratio:2.5;background:center/cover;position:relative}
+.e-c .ic{position:absolute;left:14px;bottom:-18px;width:44px;height:44px;border-radius:50%;background:var(--card);display:grid;place-items:center}
+.e-c .ic svg{width:24px;height:24px}
+.e-c .bd{padding:22px 22px 20px 64px;display:flex;flex-direction:column;flex:1}
+.e-c h3{font-family:var(--display);text-transform:uppercase;font-size:14.5px;letter-spacing:.03em}
+.e-c p{font-size:13px;color:#5b655f;margin:8px 0 14px;flex:1}
+.e-c .l{font-size:13px;text-decoration:underline;display:inline-flex;gap:8px;align-items:center}
+.e-c .l svg{width:13px;height:13px}
+.team{padding:40px 0 40px}
+.team .wrap{display:grid;grid-template-columns:.95fr 1.05fr;gap:50px;align-items:center}
+.team h2{font-family:var(--serif);font-weight:500;font-size:clamp(26px,2.5vw,32px);margin:12px 0 16px;line-height:1.15}
+.team p{color:#4b5550;font-size:14.5px;max-width:420px}
+.agent{display:grid;grid-template-columns:200px 1fr;background:var(--card);border:1px solid var(--line)}
+.agent img{width:100%;height:100%;min-height:250px;object-fit:cover;object-position:50% 25%}
+.agent .bd{padding:26px 28px}
+.agent b{font-family:var(--serif);font-weight:600;font-size:22px;display:block}
+.agent b span{text-transform:uppercase}
+.agent .r{font-size:12.5px;letter-spacing:.08em;text-transform:uppercase;color:#8a7650;margin-top:4px;display:block}
+.agent ul{list-style:none;margin:18px 0 20px;display:grid;gap:8px;font-size:14px}
+.agent li{display:flex;gap:10px;align-items:center}
+.agent li svg{width:14px;height:14px;color:var(--gold)}
+.agent li small{color:var(--muted);min-width:92px;font-size:13px}
+.band{--bl:33%}
+.band .im{background-image:url(assets/img/p-cath.jpg)}
+.band h2{font-family:var(--serif);font-weight:500;font-size:clamp(28px,2.6vw,34px)}
+.band .side{display:grid;gap:12px;justify-items:center;font-size:12.5px;color:#cfd6d0}
+@media (max-width:1100px){.story .wrap,.approach .wrap,.team .wrap{grid-template-columns:1fr;gap:30px}.ap-g{grid-template-columns:1fr 1fr}.dom{grid-template-columns:1fr}.dom .side{min-height:220px}.e-grid{grid-template-columns:1fr}}
+@media (max-width:640px){.store .im{margin-right:0}.store .box{position:relative;width:auto}.ap-g{grid-template-columns:1fr}.agent{grid-template-columns:1fr}.agent img{height:300px}.dom .in{padding:30px 20px}}
+</style>
+</head>
+<body data-page="apropos">
+
+<section class="hero">
+  <div class="blur" aria-hidden="true"></div>
+  <div class="bg" role="img" aria-label="La façade de l'agence CENTURY 21 Maitrejean Immobilier, rue Mathurin Régnier à Chartres"></div>
+  <div class="wrap">
+    <p class="kick light rv">À propos</p>
+    <h1 class="rv">L'immobilier, avec<br>une vision patrimoniale.</h1>
+    <p class="lead rv" style="max-width:380px">À Chartres et dans les communes alentours, nous accompagnons chaque projet immobilier avec une approche fondée sur l'écoute, le conseil et la connaissance du marché local.</p>
+    <div class="ctas rv"><a class="btn btn-sand" href="contact.html">Contacter l'agence <svg class="ar"><use href="#i-ar"/></svg></a></div>
+  </div>
+</section>
+
+<section class="story">
+  <div class="wrap">
+    <div>
+      <p class="kick rv">Notre histoire</p>
+      <h2 class="t-sr rv">Une agence ancrée<br>dans son territoire</h2>
+      <p class="rv">Implantée à Chartres depuis plusieurs années, Maitrejean Immobilier est une agence du réseau Century 21. Notre force : une <b>parfaite connaissance du marché local</b>, associée à la puissance et à la notoriété d'un réseau national reconnu.</p>
+      <a class="lnk rv" href="https://www.century21-maitrejean-chartres.com/" target="_blank" rel="noopener">Découvrir notre agence <svg class="ar"><use href="#i-ar"/></svg></a>
+    </div>
+    <div class="store rv">
+      <div class="im" role="img" aria-label="L'équipe de CENTURY 21 Maitrejean Immobilier"></div>
+      <div class="box"><svg><use href="#i-pin-o"/></svg><b>Chartres<br>&amp; alentours</b>Une présence locale,<br>une vision durable.</div>
+    </div>
+  </div>
+</section>
+
+<section class="approach">
+  <div class="wrap">
+    <div>
+      <p class="kick rv">Notre approche</p>
+      <h2 class="t-sr rv">Un projet immobilier<br>ne se résume pas à un bien.</h2>
+      <p class="rv">Chaque projet est unique. Nous prenons le temps de vous écouter, de comprendre vos besoins et de vous conseiller avec justesse, à chaque étape.</p>
+    </div>
+    <div class="ap-g">
+      <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"><path d="M7 9a5 5 0 0 1 10 0c0 3-2.5 3.8-3 6.3-.4 2.2-1.6 3.7-3.5 3.7A3 3 0 0 1 7.5 16"/><path d="M10 9.5a2 2 0 0 1 4 0c0 1.3-1.2 1.6-1.4 2.6"/></svg><h3>Écouter</h3>Comprendre votre situation avant de parler de solution.</div>
+      <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="12" r="9.5"/><path d="m15.5 8.5-2 5-5 2 2-5z" stroke-linejoin="round"/></svg><h3>Conseiller</h3>Vous apporter une lecture claire des possibilités.</div>
+      <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2"><circle cx="12" cy="6" r="2.6"/><circle cx="5.5" cy="9" r="2.1"/><circle cx="18.5" cy="9" r="2.1"/><path d="M7.5 20v-3.5c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5V20zM2 20v-2.5c0-2 1.6-3.5 3.5-3.5 1 0 1.8.3 2.4.9M22 20v-2.5c0-2-1.6-3.5-3.5-3.5-1 0-1.8.3-2.4.9"/></svg><h3>Accompagner</h3>Vous suivre à chaque étape de votre projet.</div>
+      <div class="rv"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"><path d="M12 2.8 4.5 5.5v6c0 4.6 3.2 8.3 7.5 9.7 4.3-1.4 7.5-5.1 7.5-9.7v-6z"/><path d="m8.5 12 2.4 2.4 4.6-4.9" stroke-linecap="round"/></svg><h3>Anticiper</h3>Prendre en compte les enjeux patrimoniaux de demain.</div>
+    </div>
+  </div>
+</section>
+
+<section class="dom">
+  <div class="in on-dark">
+    <p class="kick light rv">Nos domaines d'accompagnement</p>
+    <h2 class="rv">Trois expertises.<br>Une même vision patrimoniale.</h2>
+    <div class="e-grid">
+      <a class="e-c rv" href="immobilier-neuf.html"><div class="im" style="background-image:url(assets/img/e1.jpg)"><span class="ic"><svg><use href="#i-home"/></svg></span></div><div class="bd"><h3>Immobilier neuf</h3><p>Acquérir, investir, préparer<br>un projet immobilier.</p><span class="l">Découvrir <svg><use href="#i-ar"/></svg></span></div></a>
+      <a class="e-c rv" href="viager.html"><div class="im" style="background-image:url(assets/img/e2.jpg)"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="6" r="2.6"/><circle cx="5.5" cy="9" r="2.1"/><circle cx="18.5" cy="9" r="2.1"/><path d="M7.5 20v-3.5c0-2.5 2-4.5 4.5-4.5s4.5 2 4.5 4.5V20z"/></svg></span></div><div class="bd"><h3>Viager</h3><p>Valoriser son patrimoine autrement,<br>à la vente comme à l'acquisition.</p><span class="l">Découvrir <svg><use href="#i-ar"/></svg></span></div></a>
+      <a class="e-c rv" href="solutions-patrimoniales.html"><div class="im" style="background-image:url(assets/img/e3.jpg)"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 20h18M5 20v-6h3v6M10.5 20V10h3v10M16 20V7h3v13M4 11l5-4 4 2 6-5"/></svg></span></div><div class="bd"><h3>Solutions patrimoniales</h3><p>Réfléchir à la fiscalité, au développement du patrimoine, à la retraite ou à la transmission.</p><span class="l">Découvrir <svg><use href="#i-ar"/></svg></span></div></a>
+    </div>
+  </div>
+  <div class="side" role="img" aria-label="L'entrée de l'agence, rue Mathurin Régnier"></div>
+</section>
+
+<section class="team">
+  <div class="wrap">
+    <div>
+      <p class="kick rv">Notre équipe</p>
+      <h2 class="rv">Des interlocuteurs qui connaissent<br>votre territoire</h2>
+      <p class="rv">Derrière chaque projet, il y a une personne. Notre équipe vous accompagne avec une approche simple, disponible et personnalisée.</p>
+    </div>
+    <article class="agent rv">
+      <img src="assets/img/raphael-lecoeur.jpg" alt="Raphaël Lecoeur, conseiller commercial neuf et investissement">
+      <div class="bd">
+        <b>Raphaël <span>Lecoeur</span></b>
+        <span class="r">Conseiller commercial neuf<br>et investissement</span>
+        <ul>
+          <li><svg><use href="#i-tel"/></svg><small>Ligne directe</small><a href="tel:+33644126408">06 44 12 64 08</a></li>
+          <li><svg><use href="#i-tel"/></svg><small>Ligne agence</small><a href="tel:+33237992121">02 37 99 21 21</a></li>
+          <li><svg><use href="#i-pin"/></svg><small>Agence</small>14 rue Mathurin Régnier, 28000 Chartres</li>
+        </ul>
+        <a class="btn btn-green" href="contact.html?profil=investisseur&amp;guide=neuf">Prendre rendez-vous <svg class="ar"><use href="#i-ar"/></svg></a>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="band">
+  <div class="im" role="img" aria-label="La cathédrale de Chartres vue des toits"></div>
+  <div class="in on-dark">
+    <div><p class="kick light rv">Vous avez un projet immobilier ou patrimonial ?</p><h2 class="rv">Parlons-en.</h2></div>
+    <div class="side"><a class="btn btn-ghost" href="contact.html">Prendre rendez-vous <svg class="ar"><use href="#i-ar"/></svg></a><span>Étude personnalisée et confidentielle</span></div>
+  </div>
+</section>
+
+<script src="assets/js/layout.js"></script>
+<div id="mq-banner" role="note" style="position:fixed;left:16px;bottom:16px;z-index:2147483000;max-width:calc(100vw - 110px);background:#0a2419;color:#e8d2a0;border:1px solid rgba(232,210,160,.35);border-radius:6px;padding:9px 14px;font:600 12.5px/1.35 system-ui,sans-serif;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)">Maquette de travail Flipster · site non officiel · aucune donnée n’est envoyée</div><style>@media (max-width:640px){#mq-banner{left:10px;bottom:10px;font-size:11px!important}}</style>
+</body>
+</html>

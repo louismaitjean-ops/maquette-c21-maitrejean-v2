@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Viager à Chartres · CENTURY 21 Maitrejean Immobilier</title>
+<meta name="description" content="Viager occupé ou viager libre à Chartres et en Eure-et-Loir : opportunités, guide du viager gratuit, avantages pour le vendeur et l'acquéreur.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+.hero .bg{background-image:url(assets/img/v-hero.jpg)}
+.hero .blur{background-image:url(assets/img/v-hero.jpg)}
+.hero .wrap{min-height:430px;padding-bottom:90px;padding-top:30px}
+.hero h1{font-family:var(--display);text-transform:uppercase;font-size:clamp(30px,3.4vw,44px);line-height:1.12}
+.search{--n:4;grid-template-columns:200px 1fr auto}
+.search h2{font-size:21px}
+.ops{padding:60px 0 70px}
+.pc .ph{--ar:1.84}
+.pc .ex{top:auto;bottom:10px}
+.pc dl div{display:flex;gap:6px}
+.pc dl dt{color:var(--muted)}
+.note{font-size:13px;color:var(--soft);margin-top:18px}
+.empty{display:none;padding:40px;text-align:center;border:1px dashed var(--line);color:var(--muted)}
+.guide .tx p b{color:#a88b55}
+.adv{display:grid;grid-template-columns:1.05fr 1fr 1fr 1.15fr;background:#efebe4;align-items:stretch}
+.adv>div{padding:44px 34px}
+.adv h2{font-family:var(--display);text-transform:uppercase;font-size:clamp(22px,2.1vw,27px);margin-top:14px;line-height:1.2}
+.adv .col{border-left:1px solid #ddd6c9}
+.adv .col h3{display:flex;gap:14px;align-items:center;font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:500;margin-bottom:18px}
+.adv .col h3 svg{width:28px;height:28px;flex:none}
+.adv ul{list-style:none;display:grid;gap:10px;font-size:14px;color:#3f4944;padding-left:42px}
+.adv li{display:flex;gap:10px}
+.adv li svg{width:14px;height:14px;margin-top:4px;flex:none}
+.adv .cta{position:relative;overflow:hidden;background:#e4dfd5}
+.adv .cta::before{content:"";position:absolute;inset:0;background:url(assets/img/v-cath.jpg) left center/cover;opacity:.22;filter:grayscale(.4)}
+.adv .cta>*{position:relative}
+.adv .cta h3{font-family:var(--display);text-transform:uppercase;font-size:17px;line-height:1.3;font-weight:400}
+.adv .cta p{font-size:14px;color:#3f4944;margin-top:8px}
+.adv .cta small{display:block;margin-top:18px;font-size:12px;color:var(--muted)}
+.band{--bl:28%}
+.band .im{background-image:url(assets/img/v-cath.jpg)}
+@media (max-width:1150px){.search{grid-template-columns:1fr}.adv{grid-template-columns:1fr 1fr}.adv .col:nth-child(3){border-left:1px solid #ddd6c9}.adv>div:nth-child(1){grid-column:1/-1}.adv .cta{grid-column:1/-1}}
+@media (max-width:640px){.adv{grid-template-columns:1fr}.adv .col{border-left:0;border-top:1px solid #ddd6c9}.adv>div{padding:34px 22px}.adv ul{padding-left:0}}
+</style>
+</head>
+<body data-page="viager">
+
+<section class="hero">
+  <div class="blur" aria-hidden="true"></div>
+  <div class="bg" role="img" aria-label="Terrasse avec vue sur la cathédrale de Chartres"></div>
+  <div class="wrap">
+    <p class="kick light rv">Viager</p>
+    <h1 class="rv">Valoriser son<br>patrimoine autrement</h1>
+    <p class="lead rv">Viager occupé ou viager libre : découvrez une solution immobilière qui peut répondre à différents projets patrimoniaux.</p>
+    <div class="ctas rv"><a class="btn btn-sand" href="contact.html?profil=vendeur&amp;guide=viager">Je souhaite vendre en viager <svg class="ar"><use href="#i-ar"/></svg></a><a class="btn btn-ghost" href="#opportunites">Je souhaite acheter en viager <svg class="ar"><use href="#i-ar"/></svg></a></div>
+  </div>
+</section>
+
+<div class="wrap">
+  <form class="search rv" id="search">
+    <h2 class="up">Trouvez une<br>opportunité<small>qui correspond à votre projet</small></h2>
+    <div class="fields">
+      <label><span>Localisation</span><div class="sel"><svg class="i"><use href="#i-pin-o"/></svg><select id="fLoc"><option value="">Chartres, Eure-et-Loir…</option><option>Chartres</option><option>Lucé</option><option>Eure-et-Loir</option></select></div></label>
+      <label><span>Type de viager</span><div class="sel"><select id="fType"><option value="">Occupé / Libre</option><option value="occ">Viager occupé</option><option value="lib">Viager libre</option></select></div></label>
+      <label><span>Bouquet</span><div class="sel"><select id="fBouquet"><option value="">Bouquet maximum</option><option value="50000">Jusqu'à 50 000 €</option><option value="100000">Jusqu'à 100 000 €</option><option value="150000">Jusqu'à 150 000 €</option><option value="200000">Jusqu'à 200 000 €</option></select></div></label>
+      <label><span>Rente mensuelle maximum</span><div class="sel"><select id="fRente"><option value="">Montant souhaité</option><option value="500">Jusqu'à 500 €</option><option value="750">Jusqu'à 750 €</option><option value="1000">Jusqu'à 1 000 €</option><option value="1500">Jusqu'à 1 500 €</option></select></div></label>
+    </div>
+    <button class="btn btn-green">Rechercher <svg class="ar"><use href="#i-ar"/></svg></button>
+  </form>
+</div>
+
+<section class="ops" id="opportunites">
+  <div class="wrap">
+    <div class="sec-h">
+      <div><p class="kick rv">Nos opportunités</p><h2 class="t-up rv">Des biens sélectionnés pour vous</h2></div>
+      <a class="lnk rv" href="#opportunites" id="seeAll">Voir toutes nos opportunités <svg class="ar"><use href="#i-ar"/></svg></a>
+    </div>
+    <div class="cards" id="grid"></div>
+    <p class="empty" id="empty">Aucune opportunité ne correspond à ces critères pour le moment. <a href="contact.html?profil=acheteur&amp;guide=viager" style="text-decoration:underline">Laissez-nous vos critères</a> : nous vous prévenons dès qu'un viager correspond.</p>
+    <p class="note rv">Biens présentés à titre d'exemple : le site actuel de l'agence ne propose pas encore de viager en ligne.</p>
+  </div>
+</section>
+
+<section class="guide" id="guide">
+  <div class="bk"><div class="book rv"><img src="assets/img/cover-viager.jpg" alt="Couverture du guide du viager CENTURY 21 Maitrejean Immobilier"></div></div>
+  <div class="tx">
+    <p class="kick rv">Guide pratique</p>
+    <h2 class="t-up rv" style="font-size:clamp(22px,2.2vw,28px);margin-top:12px">Comprendre le viager</h2>
+    <p class="rv">Le viager repose sur un principe simple : le vendeur cède son bien en contrepartie d'un capital appelé <b>bouquet</b> et, selon les modalités choisies, d'une rente versée à vie. Mais chaque opération est différente. Notre guide vous permet de comprendre simplement les mécanismes du viager et ses avantages.</p>
+    <a class="btn btn-green rv" href="assets/guides/guide-du-viager.pdf" download="Guide du viager - CENTURY 21 Maitrejean.pdf">Télécharger gratuitement le guide <svg class="ar"><use href="#i-dl"/></svg></a>
+  </div>
+  <ul class="rv">
+    <li><svg><use href="#i-check"/></svg>Le principe du viager</li>
+    <li><svg><use href="#i-check"/></svg>Viager occupé / viager libre</li>
+    <li><svg><use href="#i-check"/></svg>Bouquet et rente</li>
+    <li><svg><use href="#i-check"/></svg>Fiscalité et charges</li>
+    <li><svg><use href="#i-check"/></svg>Questions fréquentes</li>
+  </ul>
+</section>
+
+<section class="adv">
+  <div><p class="kick rv">Pourquoi envisager un viager ?</p><h2 class="rv">Des avantages<br>pour chacun</h2></div>
+  <div class="col rv">
+    <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><circle cx="12" cy="8" r="4"/><path d="M4.5 21c0-4 3.4-6.5 7.5-6.5s7.5 2.5 7.5 6.5z"/></svg>Pour le vendeur</h3>
+    <ul><li><svg><use href="#i-check"/></svg>Valoriser son patrimoine</li><li><svg><use href="#i-check"/></svg>Percevoir une rente à vie</li><li><svg><use href="#i-check"/></svg>Continuer à vivre chez soi</li></ul>
+  </div>
+  <div class="col rv">
+    <h3><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"><path d="M2 10.5 6 7l3 1.5 3-1.5 3.5 1L20 6l2 4.5-3 2.5-4.5 4a1.5 1.5 0 0 1-2.1 0l-.4-.4-1 1a1.4 1.4 0 0 1-2-2l-.5.4a1.4 1.4 0 0 1-2-2L5.5 14z"/><path d="M12 7.5 9 11a1.5 1.5 0 0 0 2.2 2l2.3-2.2 4 3.7"/></svg>Pour l'acquéreur</h3>
+    <ul><li><svg><use href="#i-check"/></svg>Acquérir autrement</li><li><svg><use href="#i-check"/></svg>Construire un patrimoine</li><li><svg><use href="#i-check"/></svg>Diversifier son investissement</li></ul>
+  </div>
+  <div class="cta rv"><h3>Vous envisagez<br>de vendre en viager ?</h3><p>Parlez-nous de votre situation.</p><small>Étude gratuite et confidentielle</small></div>
+</section>
+
+<section class="band">
+  <div class="im" role="img" aria-label="Le marché Billard, au cœur de Chartres"></div>
+  <div class="in on-dark">
+    <div><p class="kick light rv">Une question sur le viager ?</p><h2 class="t-up rv" style="font-size:clamp(22px,2.2vw,28px)">Nous sommes là pour vous répondre</h2><p class="rv">Vous êtes propriétaire, acquéreur ou simplement en réflexion ? Notre équipe vous accompagne pour comprendre le fonctionnement du viager et déterminer si cette solution peut correspondre à votre projet.</p></div>
+    <a class="btn btn-ghost rv" href="contact.html?guide=viager">Contactez-nous <svg class="ar"><use href="#i-ar"/></svg></a>
+  </div>
+</section>
+
+<script src="assets/js/layout.js"></script>
+<script>
+/* Example listings from the approved mockup: the agency's current site has no viager listing online. */
+const V=[
+  {img:'v-op1',type:'occ',loc:'Chartres',name:'Maison de caractère',p:6,m2:150,val:420000,bouquet:150000,rente:1200},
+  {img:'v-op2',type:'lib',loc:'Lucé',name:'Maison contemporaine',p:5,m2:120,val:350000,bouquet:120000,rente:850},
+  {img:'v-op3',type:'occ',loc:'Chartres',name:'Appartement T3',p:3,m2:68,val:240000,bouquet:80000,rente:650},
+  {img:'v-op4',type:'lib',loc:'Eure-et-Loir',name:'Maison avec dépendances',p:7,m2:180,val:520000,bouquet:180000,rente:1100},
+];
+const eur=n=>n.toLocaleString('fr-FR').replace(/ | /g,' ')+' €';
+const grid=document.getElementById('grid'),empty=document.getElementById('empty');
+const card=v=>`<article class="pc rv"><div class="ph"><img src="assets/img/${v.img}.jpg" alt="${v.name}, ${v.loc}" loading="lazy"><span class="ex">Exemple</span></div>
+  <div class="bd"><span class="loc">${v.loc}</span><h3>${v.name}</h3>
+  <div class="meta"><span><svg><use href="#i-home"/></svg>${v.p} pièces</span><span><svg><use href="#i-size"/></svg>${v.m2} m²</span></div>
+  <dl><div><dt>Valeur du bien :</dt><dd>${eur(v.val)}</dd></div><div><dt>Bouquet :</dt><dd>${eur(v.bouquet)}</dd></div><div><dt>Rente mensuelle :</dt><dd>${eur(v.rente)}</dd></div></dl>
+  <a class="lnk" href="contact.html?profil=acheteur&guide=viager&programme=${encodeURIComponent(v.name+' ('+v.loc+')')}">Découvrir le bien <svg class="ar"><use href="#i-ar"/></svg></a></div></article>`;
+function draw(list){grid.innerHTML=list.map(card).join('');empty.style.display=list.length?'none':'block';reveal(grid)}
+draw(V);
+document.getElementById('search').addEventListener('submit',e=>{
+  e.preventDefault();
+  const l=fLoc.value,t=fType.value,b=+fBouquet.value||0,r=+fRente.value||0;
+  draw(V.filter(v=>(!l||v.loc===l||(l==='Eure-et-Loir'))&&(!t||v.type===t)&&(!b||v.bouquet<=b)&&(!r||v.rente<=r)));
+  document.getElementById('opportunites').scrollIntoView({behavior:'smooth'});
+});
+document.getElementById('seeAll').addEventListener('click',e=>{e.preventDefault();document.getElementById('search').reset();draw(V);document.getElementById('opportunites').scrollIntoView({behavior:'smooth'})});
+</script>
+<div id="mq-banner" role="note" style="position:fixed;left:16px;bottom:16px;z-index:2147483000;max-width:calc(100vw - 110px);background:#0a2419;color:#e8d2a0;border:1px solid rgba(232,210,160,.35);border-radius:6px;padding:9px 14px;font:600 12.5px/1.35 system-ui,sans-serif;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)">Maquette de travail Flipster · site non officiel · aucune donnée n’est envoyée</div><style>@media (max-width:640px){#mq-banner{left:10px;bottom:10px;font-size:11px!important}}</style>
+</body>
+</html>

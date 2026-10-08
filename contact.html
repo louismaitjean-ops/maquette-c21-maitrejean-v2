@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact · CENTURY 21 Maitrejean Immobilier</title>
+<meta name="description" content="Contactez CENTURY 21 Maitrejean Immobilier à Chartres : acheteur, vendeur, investisseur ou professionnel. Recevez gratuitement le guide du viager ou de l'immobilier neuf.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+.c-hero{position:relative;background:var(--green-dd);color:#fff;overflow:hidden}
+.c-hero .bg{position:absolute;inset:0;background:url(assets/img/a-cath.jpg) center 35%/cover;opacity:.32}
+.c-hero::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--green-dd) 15%,rgba(24,37,31,.4))}
+.c-hero .wrap{position:relative;z-index:1;padding-top:70px;padding-bottom:130px}
+.c-hero h1{font-family:var(--display);text-transform:uppercase;font-size:clamp(30px,3.4vw,44px);margin:16px 0 14px}
+.c-hero p{color:#e2e6e0;max-width:520px}
+.c-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:0;margin-top:-80px;position:relative;z-index:2;box-shadow:0 40px 80px -50px rgba(20,30,25,.5)}
+.c-form{background:var(--card);padding:44px 48px}
+.c-form h2{font-family:var(--display);text-transform:uppercase;font-size:22px;margin-bottom:6px}
+.c-form .s{color:var(--muted);font-size:14px;margin-bottom:26px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+.fld{display:block;margin-bottom:18px}
+.fld>span,.lbl{display:block;font-size:11px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:8px;color:var(--ink)}
+.fld input,.fld select{width:100%;height:48px;border:1px solid var(--line);background:#fff;padding:0 14px;font-size:15px;outline:none;border-radius:0;transition:border-color .2s}
+.fld input:focus,.fld select:focus{border-color:var(--green)}
+.fld .sel{height:48px}
+.fld .sel select{height:100%;border:0;padding:0}
+.fld.bad input,.fld.bad .sel{border-color:#b4553f}
+.err{display:none;color:#a0442f;font-size:12.5px;margin-top:6px}
+.bad .err{display:block}
+.subj{display:none;background:var(--sand-l);padding:10px 14px;font-size:13.5px;margin-bottom:18px}
+.subj.on{display:flex;justify-content:space-between;gap:10px}
+.subj button{background:none;border:0;cursor:pointer;font-size:16px;line-height:1}
+.guides{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:22px}
+.guides label{cursor:pointer;position:relative}
+.guides input{position:absolute;opacity:0;pointer-events:none}
+.guides span{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:8px;text-align:center;min-height:96px;border:1px solid var(--line);background:#fff;padding:12px 8px;font-size:13px;line-height:1.3;transition:all .2s}
+.guides span img{width:30px;height:42px;object-fit:cover;box-shadow:2px 3px 8px rgba(0,0,0,.2)}
+.guides span .two{display:flex;gap:4px}
+.guides span .two img{width:24px;height:34px}
+.guides span .none{width:30px;height:42px;border:1px dashed #b9b3a7;display:grid;place-items:center;color:#9a958b;font-size:18px}
+.guides input:checked+span{border-color:var(--green);background:#eef1ec;box-shadow:inset 0 0 0 1px var(--green)}
+.guides input:focus-visible+span{outline:2px solid var(--gold);outline-offset:2px}
+.rgpd{display:flex;gap:10px;align-items:flex-start;font-size:12.5px;color:var(--muted);margin-bottom:22px;line-height:1.5}
+.rgpd input{width:16px;height:16px;margin-top:2px;flex:none;accent-color:var(--green)}
+.rgpd a{text-decoration:underline}
+.c-form .btn{width:100%;justify-content:center;height:52px}
+.ok{display:none;text-align:center;padding:30px 10px}
+.ok.on{display:block}
+.ok svg.seal{width:60px;height:60px;color:var(--green);margin:0 auto 18px;display:block}
+.ok h2{margin-bottom:10px}
+.ok p{color:var(--muted);max-width:420px;margin:0 auto 20px}
+.ok .dls{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.c-info{background:var(--green);color:#fff;padding:44px 40px;display:flex;flex-direction:column;gap:26px}
+.c-info h3{font-family:var(--display);text-transform:uppercase;font-size:17px;letter-spacing:.03em}
+.c-info .it{display:flex;gap:14px;font-size:14.5px;color:#e2e6e0}
+.c-info .it svg{width:18px;height:18px;color:var(--sand);flex:none;margin-top:3px}
+.c-info .it b{display:block;color:#fff;font-weight:500}
+.hours{font-size:13.5px;color:#d5dbd5;display:grid;grid-template-columns:auto 1fr;gap:4px 18px}
+.c-info .ag{display:flex;gap:14px;align-items:center;border-top:1px solid rgba(255,255,255,.12);padding-top:24px}
+.c-info .ag img{width:64px;height:64px;border-radius:50%;object-fit:cover;object-position:50% 20%;filter:grayscale(1)}
+.c-info .ag b{display:block;font-family:var(--display);font-weight:400;text-transform:uppercase}
+.c-info .ag span{font-size:12.5px;color:var(--sand)}
+.c-info .ag a{display:block;font-size:14px;margin-top:4px}
+.c-map{padding:70px 0 80px}
+@media (max-width:1000px){.c-grid{grid-template-columns:1fr}}
+@media (max-width:640px){.c-form{padding:30px 22px}.row2{grid-template-columns:1fr;gap:0}.guides{grid-template-columns:1fr 1fr}.c-info{padding:34px 22px}}
+</style>
+</head>
+<body data-page="contact">
+
+<section class="c-hero">
+  <div class="bg" aria-hidden="true"></div>
+  <div class="wrap">
+    <p class="kick light rv">Contact</p>
+    <h1 class="rv">Parlons de votre projet</h1>
+    <p class="rv">Vente, acquisition, investissement ou projet patrimonial : laissez-nous vos coordonnées, un conseiller de l'agence vous rappelle.</p>
+  </div>
+</section>
+
+<div class="wrap c-map">
+  <div class="c-grid">
+    <form class="c-form" id="cform" novalidate>
+      <div id="fields">
+        <h2>Vos coordonnées</h2>
+        <p class="s">Tous les champs sont obligatoires.</p>
+        <div class="subj" id="subj"><span id="subjT"></span><button type="button" aria-label="Retirer l'objet" id="subjX">×</button></div>
+        <div class="row2">
+          <label class="fld"><span>Nom</span><input name="nom" autocomplete="family-name" required><em class="err">Merci d'indiquer votre nom.</em></label>
+          <label class="fld"><span>Prénom</span><input name="prenom" autocomplete="given-name" required><em class="err">Merci d'indiquer votre prénom.</em></label>
+        </div>
+        <div class="row2">
+          <label class="fld"><span>Téléphone</span><input name="tel" type="tel" autocomplete="tel" inputmode="tel" required><em class="err">Merci d'indiquer un numéro valide.</em></label>
+          <label class="fld"><span>E-mail</span><input name="email" type="email" autocomplete="email" required><em class="err">Merci d'indiquer une adresse e-mail valide.</em></label>
+        </div>
+        <label class="fld"><span>Vous êtes</span><div class="sel"><select name="profil" id="profil" required><option value="">Choisir…</option><option value="acheteur">Acheteur</option><option value="vendeur">Vendeur</option><option value="investisseur">Investisseur</option><option value="professionnel">Professionnel</option></select></div><em class="err">Merci de choisir votre profil.</em></label>
+        <p class="lbl" id="gl">Souhaitez-vous recevoir un guide gratuit ?</p>
+        <div class="guides" role="radiogroup" aria-labelledby="gl">
+          <label><input type="radio" name="guide" value="viager"><span><img src="assets/img/cover-viager.jpg" alt="">Guide du viager</span></label>
+          <label><input type="radio" name="guide" value="neuf"><span><img src="assets/img/cover-neuf.jpg" alt="">Guide de l'immobilier neuf</span></label>
+          <label><input type="radio" name="guide" value="deux"><span><i class="two"><img src="assets/img/cover-viager.jpg" alt=""><img src="assets/img/cover-neuf.jpg" alt=""></i>Les deux guides</span></label>
+          <label><input type="radio" name="guide" value="aucun" checked><span><i class="none">–</i>Aucun guide</span></label>
+        </div>
+        <label class="rgpd"><input type="checkbox" name="rgpd" required><span>J'accepte que mes données soient utilisées par CENTURY 21 Maitrejean Immobilier pour répondre à ma demande et, le cas échéant, m'envoyer le guide choisi. <a href="https://www.century21-maitrejean-chartres.com/protection-des-donnees/" target="_blank" rel="noopener">Protection des données</a></span></label>
+        <button class="btn btn-green">Envoyer ma demande <svg class="ar"><use href="#i-ar"/></svg></button>
+      </div>
+      <div class="ok" id="ok" role="status">
+        <svg class="seal"><use href="#c21-seal"/></svg>
+        <h2 class="t-up" style="font-size:24px">Merci, c'est noté</h2>
+        <p id="okT">Un conseiller de l'agence vous rappelle très vite.</p>
+        <div class="dls" id="dls"></div>
+        <p style="font-size:12.5px;margin-top:20px">(Maquette : aucune donnée n'est envoyée.)</p>
+      </div>
+    </form>
+
+    <aside class="c-info">
+      <h3>L'agence</h3>
+      <div class="it"><svg><use href="#i-pin"/></svg><span><b>CENTURY 21 Maitrejean Immobilier</b>14 rue Mathurin Régnier<br>28000 Chartres</span></div>
+      <div class="it"><svg><use href="#i-tel"/></svg><span><b><a href="tel:+33237992121">02 37 99 21 21</a></b>Du lundi au samedi</span></div>
+      <div class="it"><svg><use href="#i-mail"/></svg><span><a href="mailto:contact@maitrejean-immobilier.fr">contact@maitrejean-immobilier.fr</a></span></div>
+      <div class="hours"><span>Lundi</span><span>09:00–12:30 · 14:00–18:00</span><span>Mardi – Vendredi</span><span>09:00–12:30 · 14:00–19:00</span><span>Samedi</span><span>09:00–12:30 · 14:00–18:00</span><span>Dimanche</span><span>Fermé</span></div>
+      <div class="ag"><img src="assets/img/raphael-lecoeur.jpg" alt="Raphaël Lecoeur"><div><b>Raphaël Lecoeur</b><span>Conseiller commercial neuf et investissement</span><a href="tel:+33644126408">06 44 12 64 08</a></div></div>
+    </aside>
+  </div>
+</div>
+
+<script src="assets/js/layout.js"></script>
+<script>
+const q=new URLSearchParams(location.search),f=document.getElementById('cform');
+if(q.get('profil'))f.profil.value=q.get('profil');
+if(['viager','neuf','deux','aucun'].includes(q.get('guide')))f.querySelector(`input[name=guide][value=${q.get('guide')}]`).checked=true;
+const subj=q.get('programme');
+if(subj){subjT.textContent='Objet : '+subj;document.getElementById('subj').classList.add('on')}
+subjX.onclick=()=>document.getElementById('subj').classList.remove('on');
+const checks={nom:v=>v.trim().length>1,prenom:v=>v.trim().length>1,tel:v=>v.replace(/\D/g,'').length>=10,email:v=>/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v),profil:v=>!!v};
+f.addEventListener('input',e=>{const l=e.target.closest('.fld');if(l&&checks[e.target.name]?.(e.target.value))l.classList.remove('bad')});
+f.addEventListener('submit',e=>{
+  e.preventDefault();let first=null;
+  for(const [n,ok] of Object.entries(checks)){const el=f[n],l=el.closest('.fld');const good=ok(el.value);l.classList.toggle('bad',!good);if(!good&&!first)first=el}
+  const r=f.rgpd;if(!r.checked&&!first){r.focus();r.setCustomValidity('Merci de cocher cette case.');r.reportValidity();r.setCustomValidity('');return}
+  if(first){first.focus();return}
+  const g=f.guide.value,G={viager:['assets/guides/guide-du-viager.pdf','Guide du viager'],neuf:['assets/guides/guide-immobilier-neuf.pdf','Guide de l\'immobilier neuf']};
+  const list=g==='deux'?['viager','neuf']:(G[g]?[g]:[]);
+  okT.textContent=`Merci ${f.prenom.value.trim()}, un conseiller de l'agence vous rappelle très vite au ${f.tel.value.trim()}.`+(list.length?` ${list.length>1?'Vos guides sont envoyés':'Votre guide est envoyé'} à ${f.email.value.trim()} ; vous pouvez aussi ${list.length>1?'les':'le'} télécharger dès maintenant.`:'');
+  dls.innerHTML=list.map(k=>`<a class="btn btn-sand" href="${G[k][0]}" download>${G[k][1]} <svg class="ar"><use href="#i-dl"/></svg></a>`).join('');
+  document.getElementById('fields').style.display='none';document.getElementById('ok').classList.add('on');
+  document.getElementById('cform').scrollIntoView({behavior:'smooth',block:'center'});
+});
+</script>
+<div id="mq-banner" role="note" style="position:fixed;left:16px;bottom:16px;z-index:2147483000;max-width:calc(100vw - 110px);background:#0a2419;color:#e8d2a0;border:1px solid rgba(232,210,160,.35);border-radius:6px;padding:9px 14px;font:600 12.5px/1.35 system-ui,sans-serif;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)">Maquette de travail Flipster · site non officiel · aucune donnée n’est envoyée</div><style>@media (max-width:640px){#mq-banner{left:10px;bottom:10px;font-size:11px!important}}</style>
+</body>
+</html>
