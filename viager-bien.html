@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Viager · CENTURY 21 Maitrejean Immobilier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&family=Marcellus&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+.crumbs{font-size:13px;color:var(--muted);padding:26px 0 20px;display:flex;gap:8px;flex-wrap:wrap}
+.crumbs a:hover{color:var(--ink);text-decoration:underline}
+.ph-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;padding-bottom:26px}
+.ph-head h1{font-family:var(--display);text-transform:uppercase;font-size:clamp(28px,3.2vw,42px);margin:10px 0 8px}
+.ph-head .typo{color:var(--muted)}
+.ph-head .pr{text-align:right}
+.ph-head .pr small{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.ph-head .pr b{font-family:var(--display);font-weight:400;font-size:clamp(26px,2.6vw,34px)}
+.badge{display:inline-block;background:var(--green);color:#fff;font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:3px;margin-top:10px}
+.gal{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:230px 230px;gap:8px;position:relative}
+.gal button{border:0;padding:0;overflow:hidden;cursor:zoom-in;background:#ddd}
+.gal button:first-child{grid-row:1/3}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.gal button:hover img{transform:scale(1.04)}
+.gal .all{position:absolute;right:14px;bottom:14px;background:#fff;border:0;padding:10px 16px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+.gal.n1{grid-template-columns:1fr;grid-template-rows:460px}.gal.n2{grid-template-columns:2fr 1fr}.gal.n3{grid-template-columns:2fr 1fr}
+.main{display:grid;grid-template-columns:1fr 360px;gap:60px;padding:50px 0 80px;align-items:start}
+.blk{padding:30px 0;border-top:1px solid var(--line)}
+.blk:first-child{border-top:0;padding-top:0}
+.blk h2{font-family:var(--display);text-transform:uppercase;font-size:20px;margin-bottom:16px}
+.blk .hd2{font-family:var(--serif);font-size:24px;font-weight:500;margin-bottom:14px}
+.blk p{color:#3d4742;margin-bottom:12px;max-width:68ch}
+.lots{list-style:none;display:grid;gap:8px}
+.lots li{display:flex;justify-content:space-between;gap:16px;background:#fff;border:1px solid var(--line);padding:14px 18px;font-size:15px}
+.lots li b{font-weight:500;white-space:nowrap}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--sand-l);padding:7px 13px;font-size:13.5px;border-radius:2px}
+.eq{list-style:none;display:grid;gap:8px}
+.eq li{display:flex;gap:10px;font-size:15px;color:#3d4742}
+.eq li svg{width:16px;height:16px;flex:none;margin-top:4px;color:var(--gold)}
+.side{position:sticky;top:100px;display:grid;gap:16px}
+.agent{background:var(--green);color:#fff;padding:28px}
+.agent .top{display:flex;gap:16px;align-items:center;margin-bottom:18px}
+.agent img{width:76px;height:76px;object-fit:cover;object-position:50% 20%;border-radius:50%;filter:grayscale(1)}
+.agent b{display:block;font-family:var(--display);font-weight:400;font-size:19px;text-transform:uppercase;letter-spacing:.02em}
+.agent .r{font-size:12.5px;color:var(--sand);letter-spacing:.06em;text-transform:uppercase}
+.agent a.l{display:flex;justify-content:space-between;padding:10px 0;border-top:1px solid rgba(255,255,255,.12);font-size:14px}
+.agent a.l span{color:#cfd6d0}
+.agent .btn{width:100%;justify-content:center;margin-top:16px}
+.mini{background:#fff;border:1px solid var(--line);padding:22px;font-size:14px;color:var(--muted)}
+.mini a{color:var(--ink);text-decoration:underline}
+.others{background:#ece7de;padding:70px 0}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(14,20,17,.95);display:none;align-items:center;justify-content:center}
+.lb.on{display:flex}
+.lb img{max-width:92vw;max-height:84vh;object-fit:contain}
+.lb button{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;width:50px;height:50px;border-radius:50%;cursor:pointer;font-size:22px}
+.lb .p{left:24px;top:50%}.lb .n{right:24px;top:50%}.lb .x{right:24px;top:24px}
+.lb .c{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:#cfd6d0;font-size:14px}
+.nf{padding:120px 0;text-align:center}
+@media (max-width:1000px){.main{grid-template-columns:1fr;gap:30px}.side{position:static}}
+@media (max-width:640px){.gal{grid-template-columns:1fr 1fr;grid-template-rows:240px 110px}.gal button:first-child{grid-column:1/3;grid-row:1}.gal button:nth-child(n+4){display:none}.ph-head .pr{text-align:left}}
+.fig{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:0 28px;margin:0}
+.fig div{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);font-size:15px}
+.fig dt{color:var(--muted)}.fig dd{font-weight:500;white-space:nowrap}
+.tetes2{font-family:var(--serif);font-size:20px;color:#8a7650;margin-top:6px}
+.fee{font-size:13.5px;color:var(--muted);margin-top:14px}.fee a{color:var(--green);text-decoration:underline}
+.ex{display:inline-block;background:var(--sand);color:var(--ink);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:3px;margin:10px 0 0 6px}
+</style>
+</head>
+<body data-page="viager">
+<main id="app"></main>
+<div class="lb" id="lb"><button class="x" aria-label="Fermer">×</button><button class="p" aria-label="Photo précédente">‹</button><img alt=""><button class="n" aria-label="Photo suivante">›</button><p class="c"></p></div>
+
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/viagers-data.js"></script>
+<script src="assets/js/data.js"></script>
+<script>
+const id=new URLSearchParams(location.search).get('id');
+C21Data.then(({viagers:V})=>{
+const v=V.find(x=>x.id===id),e=C21.esc,eur=C21.eur;
+const app=document.getElementById('app');
+const ck='<svg><use href="#i-check"/></svg>';
+const TYPE={occ:'Viager occupé',lib:'Viager libre'};
+if(!v){app.innerHTML=`<div class="wrap nf"><h1 class="t-up">Bien introuvable</h1><p style="margin:16px 0 26px">Ce viager n'est plus disponible.</p><a class="btn btn-green" href="viager.html#opportunites">Voir nos opportunités ${AR}</a></div>`;window.__rendered=true;return;}
+const imgs=(v.imgs&&v.imgs.length?v.imgs:v.img?[v.img]:[]),tags=v.tags||[],equip=v.equip||[],desc=v.desc||[];
+document.title=`${v.name} en viager à ${v.loc} · CENTURY 21 Maitrejean`;
+const md=document.createElement('meta');md.name='description';md.content=`${TYPE[v.type]||'Viager'} à ${v.loc} : ${v.name}${v.bouquet?', bouquet '+eur(v.bouquet):''}${v.rente?', rente '+eur(v.rente)+' par mois':''}.`;document.head.appendChild(md);
+const g=imgs.slice(0,5);
+const others=V.filter(x=>x.id!==v.id).slice(0,3);
+const contact=`contact.html?profil=acheteur&guide=viager&programme=${encodeURIComponent(v.name+' ('+v.loc+')')}`;
+const hon=v.hon?(v.honCharge==='vend'?'Honoraires à la charge du vendeur':`Honoraires acquéreur : ${eur(v.hon)} TTC`):'';
+const fig=[['Valeur libre du bien',v.val],['Prix d\'achat',v.prix],['Bouquet',v.bouquet],['Rente mensuelle',v.rente],[v.honCharge==='vend'?'Honoraires (charge vendeur)':'Honoraires acquéreur TTC',v.hon]].filter(x=>x[1]);
+const info=[v.p?v.p+' pièces':'',v.m2?v.m2+' m²':'',TYPE[v.type]].filter(Boolean).join(' · ');
+app.innerHTML=`<div class="wrap">
+    <nav class="crumbs" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a><span>›</span><a href="viager.html">Viager</a><span>›</span><span>${e(v.name)}</span></nav>
+    <div class="ph-head"><div><p class="kick">${e(v.loc)} (${e(v.dep)})</p><h1>${e(v.name)}</h1><span class="typo">${e(info)}</span>${v.tetes?`<p class="tetes2">${e(v.tetes)}</p>`:''}<span class="badge">${TYPE[v.type]||'Viager'}</span>${v.exemple?'<span class="ex">Exemple</span>':''}</div>
+      <div class="pr"><small>${v.prix?'Prix d\'achat':v.bouquet?'Bouquet':'Prix'}</small><b>${v.prix?eur(v.prix):v.bouquet?eur(v.bouquet):'Nous consulter'}</b>${v.rente?`<small style="margin-top:6px">+ ${eur(v.rente)} de rente par mois</small>`:''}</div></div>
+    ${g.length?`<div class="gal n${Math.min(g.length,5)}" id="gal">${g.map((s,i)=>`<button data-i="${i}" aria-label="Agrandir la photo ${i+1}"><img src="${e(s)}" alt="${e(v.name)}, viager à ${e(v.loc)}, photo ${i+1}"${i?' loading="lazy"':''}></button>`).join('')}${imgs.length>1?`<button class="all" data-i="0">Voir les ${imgs.length} photos</button>`:''}</div>`:''}
+    <div class="main">
+      <div>
+        ${v.head||desc.length?`<div class="blk">${v.head?`<p class="hd2">${e(v.head)}</p>`:''}${desc.map(d=>`<p>${e(d)}</p>`).join('')}</div>`:''}
+        ${fig.length?`<div class="blk"><h2>Les chiffres</h2><dl class="fig">${fig.map(([k,n])=>`<div><dt>${k}</dt><dd>${eur(n)}</dd></div>`).join('')}</dl>
+          <p class="fee">Honoraires calculés sur la valeur libre du bien, avant droit d'usage et d'habitation, selon <a href="honoraires.html">notre barème</a>.</p></div>`:''}
+        ${tags.length?`<div class="blk"><h2>Points forts</h2><div class="chips">${tags.map(t=>`<span>${e(t)}</span>`).join('')}</div></div>`:''}
+        ${equip.length?`<div class="blk"><h2>Équipements et caractéristiques</h2><ul class="eq">${equip.map(x=>/:\s*$/.test(x)?`<li style="display:block;font-weight:500;color:var(--ink)">${e(x)}</li>`:`<li>${ck}<span>${e(x)}</span></li>`).join('')}</ul></div>`:''}
+      </div>
+      <aside class="side">
+        <div class="agent"><div class="top"><img src="assets/img/raphael-lecoeur.jpg" alt="Raphaël Lecoeur"><div><b>Raphaël Lecoeur</b><span class="r">Conseiller en immobilier<br>patrimonial</span></div></div>
+          <a class="l" href="tel:+33644126408"><span>Ligne directe</span>06 44 12 64 08</a><a class="l" href="tel:+33237992121"><span>Agence</span>02 37 99 21 21</a>
+          <a class="btn btn-sand" href="${contact}">Être recontacté ${AR}</a></div>
+        <div class="mini">Le guide du viager explique le bouquet, la rente, le droit d'usage et les garanties. <a href="${contact}">Je veux mon guide</a></div>
+      </aside>
+    </div></div>
+    ${others.length?`<section class="others"><div class="wrap"><div class="sec-h"><div><p class="kick">Nos opportunités</p><h2 class="t-up">D'autres viagers</h2></div><a class="lnk" href="viager.html#opportunites">Toutes nos opportunités ${AR}</a></div>
+      <div class="cards" style="--c:3;--ar:1.8">${others.map(o=>{const oi=(o.imgs&&o.imgs[0])||o.img;return `<article class="pc"><a class="ph" href="viager-bien.html?id=${encodeURIComponent(o.id)}">${oi?`<img src="${e(oi)}" alt="${e(o.name)}" loading="lazy">`:''}${o.exemple?'':`<span class="tag">${TYPE[o.type]||''}</span>`}</a><div class="bd"><span class="loc">${e(o.loc)}</span><h3 class="up">${e(o.name)}</h3><span style="font-size:14px;color:var(--muted);margin-bottom:16px">${o.prix?'Prix d\'achat '+eur(o.prix):o.bouquet?'Bouquet '+eur(o.bouquet):''}</span><a class="lnk" href="viager-bien.html?id=${encodeURIComponent(o.id)}">Découvrir le bien ${AR}</a></div></article>`}).join('')}</div></div></section>`:''}`;
+// lightbox
+const gal=document.getElementById('gal');
+if(gal){const lb=document.getElementById('lb'),im=lb.querySelector('img'),c=lb.querySelector('.c');let k=0;
+const set=i=>{k=(i+imgs.length)%imgs.length;im.src=imgs[k];im.alt=v.name+', photo '+(k+1);c.textContent=(k+1)+' / '+imgs.length};
+gal.addEventListener('click',ev=>{const b=ev.target.closest('[data-i]');if(!b)return;set(+b.dataset.i);lb.classList.add('on')});
+lb.querySelector('.x').onclick=()=>lb.classList.remove('on');lb.querySelector('.p').onclick=()=>set(k-1);lb.querySelector('.n').onclick=()=>set(k+1);
+addEventListener('keydown',ev=>{if(!lb.classList.contains('on'))return;if(ev.key==='Escape')lb.classList.remove('on');if(ev.key==='ArrowLeft')set(k-1);if(ev.key==='ArrowRight')set(k+1)});}
+window.__rendered=true;
+});
+</script>
+<div id="mq-banner" role="note" style="position:fixed;left:16px;bottom:16px;z-index:2147483000;max-width:calc(100vw - 110px);background:#0a2419;color:#e8d2a0;border:1px solid rgba(232,210,160,.35);border-radius:6px;padding:9px 14px;font:600 12.5px/1.35 system-ui,sans-serif;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)">Maquette de travail Flipster · site non officiel · aucune donnée n’est envoyée</div><style>@media (max-width:640px){#mq-banner{left:10px;bottom:10px;font-size:11px!important}}</style>
+</body>
+</html>
