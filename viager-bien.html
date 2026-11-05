@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta name="robots" content="noindex, nofollow">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Viager · CENTURY 21 Maitrejean Immobilier</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&family=Marcellus&display=swap" rel="stylesheet" media="print" onload="this.media='all'"><noscript><link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&family=Marcellus&display=swap" rel="stylesheet"></noscript>
+<link rel="stylesheet" href="assets/css/site.css">
+<style>
+.crumbs{font-size:13px;color:var(--muted);padding:26px 0 20px;display:flex;gap:8px;flex-wrap:wrap}
+.crumbs a:hover{color:var(--ink);text-decoration:underline}
+.ph-head{display:flex;justify-content:space-between;align-items:flex-end;gap:30px;flex-wrap:wrap;padding-bottom:26px}
+.ph-head h1{font-family:var(--display);text-transform:uppercase;font-size:clamp(28px,3.2vw,42px);margin:10px 0 8px}
+.ph-head .typo{color:var(--muted)}
+.ph-head .pr{text-align:right}
+.ph-head .pr small{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--soft)}
+.ph-head .pr b{font-family:var(--display);font-weight:400;font-size:clamp(26px,2.6vw,34px)}
+.badge{display:inline-block;background:var(--green);color:#fff;font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:3px;margin-top:10px}
+.gal{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:230px 230px;gap:8px;position:relative}
+.gal button{border:0;padding:0;overflow:hidden;cursor:zoom-in;background:#ddd}
+.gal button:first-child{grid-row:1/3}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .9s cubic-bezier(.2,.7,.2,1)}
+.gal button:hover img{transform:scale(1.04)}
+.gal .all{position:absolute;right:14px;bottom:14px;background:#fff;border:0;padding:10px 16px;font-size:12px;letter-spacing:.12em;text-transform:uppercase;cursor:pointer}
+.gal.n1{grid-template-columns:1fr;grid-template-rows:460px}.gal.n2{grid-template-columns:2fr 1fr}.gal.n3{grid-template-columns:2fr 1fr}
+.main{display:grid;grid-template-columns:1fr 360px;gap:60px;padding:50px 0 80px;align-items:start}
+.blk{padding:30px 0;border-top:1px solid var(--line)}
+.blk:first-child{border-top:0;padding-top:0}
+.blk h2{font-family:var(--display);text-transform:uppercase;font-size:20px;margin-bottom:16px}
+.blk .hd2{font-family:var(--serif);font-size:24px;font-weight:500;margin-bottom:14px}
+.blk p{color:#3d4742;margin-bottom:12px;max-width:68ch}
+.lots{list-style:none;display:grid;gap:8px}
+.lots li{display:flex;justify-content:space-between;gap:16px;background:#fff;border:1px solid var(--line);padding:14px 18px;font-size:15px}
+.lots li b{font-weight:500;white-space:nowrap}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chips span{background:var(--sand-l);padding:7px 13px;font-size:13.5px;border-radius:2px}
+.eq{list-style:none;display:grid;gap:8px}
+.eq li{display:flex;gap:10px;font-size:15px;color:#3d4742}
+.eq li svg{width:16px;height:16px;flex:none;margin-top:4px;color:var(--gold)}
+.side{position:sticky;top:100px;display:grid;gap:16px}
+.agent{background:var(--green);color:#fff;padding:28px}
+.agent .top{display:flex;gap:16px;align-items:center;margin-bottom:18px}
+.agent img{width:76px;height:76px;object-fit:cover;object-position:50% 20%;border-radius:50%;filter:grayscale(1)}
+.agent b{display:block;font-family:var(--display);font-weight:400;font-size:19px;text-transform:uppercase;letter-spacing:.02em}
+.agent .r{font-size:12.5px;color:var(--sand);letter-spacing:.06em;text-transform:uppercase}
+.agent a.l{display:flex;justify-content:space-between;padding:10px 0;border-top:1px solid rgba(255,255,255,.12);font-size:14px}
+.agent a.l span{color:#cfd6d0}
+.agent .btn{width:100%;justify-content:center;margin-top:16px}
+.mini{background:#fff;border:1px solid var(--line);padding:22px;font-size:14px;color:var(--muted)}
+.mini a{color:var(--ink);text-decoration:underline}
+.others{background:#ece7de;padding:70px 0}
+.lb{position:fixed;inset:0;z-index:100;background:rgba(14,20,17,.95);display:none;align-items:center;justify-content:center}
+.lb.on{display:flex}
+.lb img{max-width:92vw;max-height:84vh;object-fit:contain}
+.lb button{position:absolute;background:rgba(255,255,255,.12);border:0;color:#fff;width:50px;height:50px;border-radius:50%;cursor:pointer;font-size:22px}
+.lb .p{left:24px;top:50%}.lb .n{right:24px;top:50%}.lb .x{right:24px;top:24px}
+.lb .c{position:absolute;bottom:22px;left:0;right:0;text-align:center;color:#cfd6d0;font-size:14px}
+.nf{padding:120px 0;text-align:center}
+@media (max-width:1000px){.main{grid-template-columns:1fr;gap:30px}.side{position:static}}
+@media (max-width:640px){.gal{grid-template-columns:1fr 1fr;grid-template-rows:240px 110px}.gal button:first-child{grid-column:1/3;grid-row:1}.gal button:nth-child(n+4){display:none}.ph-head .pr{text-align:left}}
+.fig{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:0 28px;margin:0}
+.fig div{display:flex;justify-content:space-between;gap:14px;padding:13px 0;border-bottom:1px solid var(--line);font-size:15px}
+.fig dt{color:var(--muted)}.fig dd{font-weight:500;white-space:nowrap}
+.tetes2{font-family:var(--serif);font-size:20px;color:#6f5d3c;margin-top:6px}
+.fee{font-size:13.5px;color:var(--muted);margin-top:14px}.fee a{color:var(--green);text-decoration:underline}
+.ex{display:inline-block;background:var(--sand);color:var(--ink);font-size:12px;letter-spacing:.12em;text-transform:uppercase;padding:6px 12px;border-radius:3px;margin:10px 0 0 6px}
+</style>
+</head>
+<body data-page="viager">
+<!--layout-top-->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><symbol id="c21-word" viewBox="0 0 170 20"><path fill="currentColor" fill-rule="evenodd" d="M91.465 11.28a4.244 4.244 0 01-8.488 0V0h-3.656v11.28a7.9 7.9 0 0015.8 0V0h-3.656v11.28zM5.53 5.277a5.91 5.91 0 018.116.016l2.099-3.025a9.578 9.578 0 10.02 14.675l-2.098-3.04A5.929 5.929 0 115.53 5.277zM50.913 12.885L41.978 0h-3.657v19.182h3.657V6.295l8.935 12.887h3.657V0h-3.657zM59.446 3.657h5.663v15.525h3.657V3.657h5.663V0H59.446zM160.472 3.657h1.99v15.525h3.673V0h-5.663zM20.653 19.182h12.776v-3.658H24.31v-4.105h7.33V7.762h-7.33V3.657h9.12V0H20.653zM108.3 0h-8.286v19.182h3.657v-6.297h2.345l4.364 6.295h4.352l-4.552-6.59a6.455 6.455 0 004.552-6.156h.015A6.464 6.464 0 00108.3 0zm0 9.212h-4.63V3.657h4.63a2.778 2.778 0 010 5.556v-.001zM126.138 7.762L120.765 0H116.4l7.9 11.404v7.778h3.658v-7.778L135.855 0h-4.351zM155.286 9.583l.091-.14a6.06 6.06 0 10-11.09-3.378v.231h3.672c0-.077-.015-.154-.015-.231a2.394 2.394 0 012.391-2.392 2.323 2.323 0 012.408 2.392 4.972 4.972 0 01-.772 1.867c-.201.308-7.793 11.249-7.793 11.249h12.592v-3.657h-5.602l4.118-5.941zM169.637 17.823a.818.818 0 00-.323-.324.953.953 0 00-.91 0 .818.818 0 00-.323.324.984.984 0 000 .925.818.818 0 00.324.324.953.953 0 00.909 0 .818.818 0 00.323-.324.984.984 0 000-.925z"></path></symbol>
+  <symbol id="c21-seal" viewBox="0 0 100 100"><path d="M85.1 26.1A43 43 0 1 0 85.1 73.9" fill="none" stroke="currentColor" stroke-width="6.4"></path><path fill="currentColor" transform="translate(51 50) scale(2.15) translate(-155.2 -9.6)" d="M155.286 9.583l.091-.14a6.06 6.06 0 10-11.09-3.378v.231h3.672c0-.077-.015-.154-.015-.231a2.394 2.394 0 012.391-2.392 2.323 2.323 0 012.408 2.392 4.972 4.972 0 01-.772 1.867c-.201.308-7.793 11.249-7.793 11.249h12.592v-3.657h-5.602l4.118-5.941zM160.472 3.657h1.99v15.525h3.673V0h-5.663z"></path></symbol>
+  <symbol id="i-ar" viewBox="0 0 24 24"><path d="M4 12h15M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></symbol>
+  <symbol id="i-tel" viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1z"></path></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"></path></symbol>
+  <symbol id="i-pin-o" viewBox="0 0 24 24"><path d="M12 21s-6.5-6.6-6.5-11.5a6.5 6.5 0 0 1 13 0C18.5 14.4 12 21 12 21z" fill="none" stroke="currentColor" stroke-width="1.5"></path><circle cx="12" cy="9.5" r="2.3" fill="none" stroke="currentColor" stroke-width="1.5"></circle></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm9 7.2L4 7.3V8l8 5 8-5v-.7z"></path></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M5 12.5l4.2 4.2L19 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"></path></symbol>
+  <symbol id="i-dl" viewBox="0 0 24 24"><path d="M12 4v11M7 10.5l5 5 5-5M5 20h14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3.5 11L12 4l8.5 7M6 9.5V20h4.5v-5.5h3V20H18V9.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"></path></symbol>
+  <symbol id="i-size" viewBox="0 0 24 24"><rect x="4" y="4" width="16" height="16" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.5"></rect><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.2"></path></symbol>
+  <symbol id="i-fb" viewBox="0 0 24 24"><path fill="currentColor" d="M13.5 21v-7.5h2.6l.4-3h-3V8.6c0-.9.3-1.5 1.5-1.5h1.6V4.4a21 21 0 0 0-2.4-.1c-2.4 0-4 1.4-4 4.1v2.1H7.6v3h2.6V21z"></path></symbol>
+  <symbol id="i-ig" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5" fill="none" stroke="currentColor" stroke-width="1.7"></rect><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"></circle><circle cx="17.3" cy="6.7" r="1" fill="currentColor"></circle></symbol>
+  <symbol id="i-in" viewBox="0 0 24 24"><path fill="currentColor" d="M4 3h16a1 1 0 0 1 1 1v16a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zm1.8 7.2V18h2.6v-7.8zM7.1 6a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zm3.4 4.2V18h2.6v-4.1c0-1.1.2-2.1 1.5-2.1s1.4 1.2 1.4 2.2v4H18.6v-4.6c0-2.3-.5-4-3.1-4-1.3 0-2.1.7-2.5 1.3v-1.1z"></path></symbol>
+  </svg>
+<header class="hd"><div class="wrap"><a href="index.html" class="logo " aria-label="CENTURY 21 Maitrejean Immobilier, accueil"><svg class="seal"><use href="#c21-seal"></use></svg><span><svg class="wm" viewBox="0 0 170 20"><use href="#c21-word"></use></svg><small>Maitrejean Immobilier</small></span></a><nav class="nav" aria-label="Navigation principale"><a href="index.html">Accueil</a><a href="immobilier-neuf.html">Immobilier neuf</a><a href="viager.html" class="on" aria-current="page">Viager</a><a href="solutions-patrimoniales.html">Solutions patrimoniales</a><a href="actualites.html">Actualités</a><a href="a-propos.html">À propos</a></nav>
+    <div class="hd-r"><a class="btn btn-green" href="contact.html">Contact <svg class="ar"><use href="#i-ar"></use></svg></a><a class="tel" href="tel:+33237992121"><svg><use href="#i-tel"></use></svg>02 37 99 21 21</a></div>
+    <button class="burger" aria-label="Ouvrir le menu"><span></span><span></span><span></span></button></div></header>
+<div class="drawer" aria-hidden="true" inert=""><button class="x" aria-label="Fermer">×</button><a href="index.html">Accueil</a><a href="immobilier-neuf.html">Immobilier neuf</a><a href="viager.html" class="on" aria-current="page">Viager</a><a href="solutions-patrimoniales.html">Solutions patrimoniales</a><a href="actualites.html">Actualités</a><a href="a-propos.html">À propos</a><a href="contact.html">Contact</a><a href="tel:+33237992121" style="font-family:var(--sans);font-size:18px">02 37 99 21 21</a></div>
+<!--/layout-top-->
+<main id="app"></main>
+<div class="lb" id="lb"><button class="x" aria-label="Fermer">×</button><button class="p" aria-label="Photo précédente">‹</button><img alt=""><button class="n" aria-label="Photo suivante">›</button><p class="c"></p></div>
+
+<!--layout-bottom-->
+<footer class="ft"><div class="wrap">
+      <div><a href="index.html" class="logo " aria-label="CENTURY 21 Maitrejean Immobilier, accueil"><svg class="seal"><use href="#c21-seal"></use></svg><span><svg class="wm" viewBox="0 0 170 20"><use href="#c21-word"></use></svg><small>Maitrejean Immobilier</small></span></a></div>
+      <div><span class="gold">Chartres &amp; alentours</span><br><a href="immobilier-neuf.html">Immobilier neuf</a> · <a href="viager.html">Viager</a> · <a href="solutions-patrimoniales.html">Solutions patrimoniales</a> · <a href="actualites.html">Actualités</a><br><a href="appartement-neuf-chartres.html">Appartement neuf à Chartres</a> · <a href="maison-neuve-chartres.html">Maison neuve à Chartres</a> · <a href="programme-neuf-agglomeration-chartres.html">Neuf autour de Chartres</a></div>
+      <div><span class="ci"><svg><use href="#i-pin"></use></svg>14 rue Mathurin Régnier</span><span class="ci"><svg><use href="#i-pin"></use></svg>28000 Chartres</span></div>
+      <div><a class="ci" href="tel:+33237992121"><svg><use href="#i-tel"></use></svg>02 37 99 21 21</a><a class="ci" href="mailto:maitrejean.immobilier@century21france.fr"><svg><use href="#i-mail"></use></svg>maitrejean.immobilier@century21france.fr</a></div>
+      <div class="soc"><a href="https://www.facebook.com/Century21.maitrejean/" target="_blank" rel="noopener" aria-label="Facebook"><svg><use href="#i-fb"></use></svg></a><a href="https://www.instagram.com/century21maitrejeanimmobilier/" target="_blank" rel="noopener" aria-label="Instagram"><svg><use href="#i-ig"></use></svg></a><a href="https://www.linkedin.com/company/century21fr" target="_blank" rel="noopener" aria-label="LinkedIn"><svg><use href="#i-in"></use></svg></a></div>
+    </div></footer>
+<div class="ft-b"><div class="wrap"><a href="https://www.century21-maitrejean-chartres.com/mentions_legales/" target="_blank" rel="noopener">Mentions légales</a><i>|</i><a href="honoraires.html">Honoraires</a><i>|</i><a href="https://www.century21-maitrejean-chartres.com/protection-des-donnees/" target="_blank" rel="noopener">Politique de confidentialité</a><i>|</i><a href="https://www.century21-maitrejean-chartres.com/protection-des-donnees/" target="_blank" rel="noopener">Gestion des cookies</a><i>|</i><a href="credits.html">Crédits photos</a></div></div>
+<!--/layout-bottom-->
+<script src="assets/js/layout.js"></script>
+<script src="assets/js/viagers-data.js"></script>
+<script src="assets/js/articles-data.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/news.js"></script>
+<script>
+const id=new URLSearchParams(location.search).get('id');
+C21Data.then(({viagers:V})=>{
+const v=V.find(x=>x.id===id),e=C21.esc,eur=C21.eur;
+const app=document.getElementById('app');
+const ck='<svg><use href="#i-check"/></svg>';
+const TYPE={occ:'Viager occupé',lib:'Viager libre'};
+if(!v){app.innerHTML=`<div class="wrap nf"><h1 class="t-up">Bien introuvable</h1><p style="margin:16px 0 26px">Ce viager n'est plus disponible.</p><a class="btn btn-green" href="viager.html#opportunites">Voir nos opportunités ${AR}</a></div>`;window.__rendered=true;return;}
+const imgs=(v.imgs&&v.imgs.length?v.imgs:v.img?[v.img]:[]),tags=v.tags||[],equip=v.equip||[],desc=v.desc||[];
+document.title=`${v.name} en viager à ${v.loc} · CENTURY 21 Maitrejean`;
+const md=document.createElement('meta');md.name='description';md.content=`${TYPE[v.type]||'Viager'} à ${v.loc} : ${v.name}${v.bouquet?', bouquet '+eur(v.bouquet):''}${v.rente?', rente '+eur(v.rente)+' par mois':''}.`;document.head.appendChild(md);
+const g=imgs.slice(0,5);
+const others=V.filter(x=>x.id!==v.id).slice(0,3);
+const contact=`contact.html?profil=acheteur&guide=viager&type=viager&programme=${encodeURIComponent(v.name+' ('+v.loc+')')}`;
+const hon=v.hon?(v.honCharge==='vend'?'Honoraires à la charge du vendeur':`Honoraires acquéreur : ${eur(v.hon)} TTC`):'';
+const fig=[['Valeur libre du bien',v.val],['Prix d\'achat',v.prix],['Bouquet',v.bouquet],['Rente mensuelle',v.rente],[v.honCharge==='vend'?'Honoraires (charge vendeur)':'Honoraires acquéreur TTC',v.hon]].filter(x=>x[1]);
+const info=[v.p?v.p+' pièces':'',v.m2?v.m2+' m²':'',TYPE[v.type]].filter(Boolean).join(' · ');
+app.innerHTML=`<div class="wrap">
+    <nav class="crumbs" aria-label="Fil d'Ariane"><a href="index.html">Accueil</a><span>›</span><a href="viager.html">Viager</a><span>›</span><span>${e(v.name)}</span></nav>
+    <div class="ph-head"><div><p class="kick">${e(v.loc)} (${e(v.dep)})</p><h1>${e(v.name)}</h1><span class="typo">${e(info)}</span>${v.tetes?`<p class="tetes2">${e(v.tetes)}</p>`:''}<span class="badge">${TYPE[v.type]||'Viager'}</span>${v.exemple?'<span class="ex">Exemple</span>':''}</div>
+      <div class="pr"><small>${v.prix?'Prix d\'achat':v.bouquet?'Bouquet':'Prix'}</small><b>${v.prix?eur(v.prix):v.bouquet?eur(v.bouquet):'Nous consulter'}</b>${v.rente?`<small style="margin-top:6px">+ ${eur(v.rente)} de rente par mois</small>`:''}</div></div>
+    ${g.length?`<div class="gal n${Math.min(g.length,5)}" id="gal">${g.map((s,i)=>`<button data-i="${i}" aria-label="Agrandir la photo ${i+1}"><img ${i?`src="${e(C21.thumb(s))}"`:C21.hero(s)} alt="${e(v.name)}, viager à ${e(v.loc)}, photo ${i+1}"${i?' loading="lazy"':''}></button>`).join('')}${imgs.length>1?`<button class="all" data-i="0">Voir les ${imgs.length} photos</button>`:''}</div>`:''}
+    <div class="main">
+      <div>
+        ${v.head||desc.length?`<div class="blk">${v.head?`<p class="hd2">${e(v.head)}</p>`:''}${desc.map(d=>`<p>${e(d)}</p>`).join('')}</div>`:''}
+        ${fig.length?`<div class="blk"><h2>Les chiffres</h2><dl class="fig">${fig.map(([k,n])=>`<div><dt>${k}</dt><dd>${eur(n)}</dd></div>`).join('')}</dl>
+          <p class="fee">Honoraires calculés sur la valeur libre du bien, avant droit d'usage et d'habitation, selon <a href="honoraires.html">notre barème</a>.</p></div>`:''}
+        ${tags.length?`<div class="blk"><h2>Points forts</h2><div class="chips">${tags.map(t=>`<span>${e(t)}</span>`).join('')}</div></div>`:''}
+        ${equip.length?`<div class="blk"><h2>Équipements et caractéristiques</h2><ul class="eq">${equip.map(x=>/:\s*$/.test(x)?`<li style="display:block;font-weight:500;color:var(--ink)">${e(x)}</li>`:`<li>${ck}<span>${e(x)}</span></li>`).join('')}</ul></div>`:''}
+      </div>
+      <aside class="side">
+        <div class="agent"><div class="top"><img src="assets/img/raphael-lecoeur.webp" alt="Raphaël Lecoeur"><div><b>Raphaël Lecoeur</b><span class="r">Conseiller en immobilier<br>patrimonial</span></div></div>
+          <a class="l" href="tel:+33644126408"><span>Ligne directe</span>06 44 12 64 08</a><a class="l" href="tel:+33237992121"><span>Agence</span>02 37 99 21 21</a>
+          <a class="btn btn-sand" href="${contact}">Être recontacté ${AR}</a></div>
+        <div class="mini">Le guide du viager explique le bouquet, la rente, le droit d'usage et les garanties. <a href="${contact}">Je veux mon guide</a></div>
+      </aside>
+    </div></div>
+    ${others.length?`<section class="others"><div class="wrap"><div class="sec-h"><div><p class="kick">Nos opportunités</p><h2 class="t-up">D'autres viagers</h2></div><a class="lnk" href="viager.html#opportunites">Toutes nos opportunités ${AR}</a></div>
+      <div class="cards" style="--c:3;--ar:1.8">${others.map(o=>{const oi=(o.imgs&&o.imgs[0])||o.img;return `<article class="pc"><a class="ph" href="viager-bien.html?id=${encodeURIComponent(o.id)}">${oi?`<img src="${e(C21.thumb(oi))}" alt="${e(o.name)}" loading="lazy">`:''}${o.exemple?'':`<span class="tag">${TYPE[o.type]||''}</span>`}</a><div class="bd"><span class="loc">${e(o.loc)}</span><h3 class="up">${e(o.name)}</h3><span style="font-size:14px;color:var(--muted);margin-bottom:16px">${o.prix?'Prix d\'achat '+eur(o.prix):o.bouquet?'Bouquet '+eur(o.bouquet):''}</span><a class="lnk" href="viager-bien.html?id=${encodeURIComponent(o.id)}">Découvrir le bien ${AR}</a></div></article>`}).join('')}</div></div></section>`:''}`;
+// lightbox
+const gal=document.getElementById('gal');
+if(gal){const lb=document.getElementById('lb'),im=lb.querySelector('img'),c=lb.querySelector('.c');let k=0;
+const set=i=>{k=(i+imgs.length)%imgs.length;im.src=imgs[k];im.alt=v.name+', photo '+(k+1);c.textContent=(k+1)+' / '+imgs.length};
+gal.addEventListener('click',ev=>{const b=ev.target.closest('[data-i]');if(!b)return;set(+b.dataset.i);lb.classList.add('on')});
+lb.querySelector('.x').onclick=()=>lb.classList.remove('on');lb.querySelector('.p').onclick=()=>set(k-1);lb.querySelector('.n').onclick=()=>set(k+1);
+addEventListener('keydown',ev=>{if(!lb.classList.contains('on'))return;if(ev.key==='Escape')lb.classList.remove('on');if(ev.key==='ArrowLeft')set(k-1);if(ev.key==='ArrowRight')set(k+1)});}
+window.__rendered=true;
+});
+</script>
+<div id="mq-banner" role="note" style="position:fixed;left:16px;bottom:16px;z-index:2147483000;max-width:calc(100vw - 110px);background:#0a2419;color:#e8d2a0;border:1px solid rgba(232,210,160,.35);border-radius:6px;padding:9px 14px;font:600 12.5px/1.35 system-ui,sans-serif;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)">Maquette de travail Flipster · site non officiel · aucune donnée n’est envoyée</div><style>@media (max-width:640px){#mq-banner{left:10px;bottom:10px;font-size:11px!important}}</style>
+</body>
+</html>
