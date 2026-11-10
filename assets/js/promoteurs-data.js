@@ -1,0 +1,15 @@
+/* Promoteurs partenaires (logos qui défilent sur la page Immobilier neuf). En production, la liste vient de l'espace conseiller. */
+window.PROMOTEURS=[ { "id": "arec-immobilier", "name": "AREC Immobilier", "img": "assets/img/promo/arec-immobilier.webp", "hidden": false },
+ { "id": "bouygues-immobilier", "name": "Bouygues Immobilier", "img": "assets/img/promo/bouygues-immobilier.webp", "hidden": false },
+ { "id": "builder-art", "name": "Builder Art", "img": "assets/img/promo/builder-art.webp", "hidden": false },
+ { "id": "european-homes", "name": "European Homes", "img": "assets/img/promo/european-homes.webp", "hidden": false },
+ { "id": "ideal-promotion", "name": "Ideal Promotion", "img": "assets/img/promo/ideal-promotion.webp", "hidden": false },
+ { "id": "greestone-immobilier", "name": "GReeStone Immobilier", "img": "assets/img/promo/greestone-immobilier.webp", "hidden": false },
+ { "id": "kaufman-broad", "name": "Kaufman & Broad", "img": "assets/img/promo/kaufman-broad.webp", "hidden": false },
+ { "id": "les-nouveaux-constructeurs", "name": "Les Nouveaux Constructeurs", "img": "assets/img/promo/les-nouveaux-constructeurs.webp", "hidden": false },
+ { "id": "nexity", "name": "Nexity", "img": "assets/img/promo/nexity.webp", "hidden": false },
+ { "id": "pichet", "name": "Pichet", "img": "assets/img/promo/pichet.webp", "hidden": false },
+ { "id": "promocean", "name": "Promocean", "img": "assets/img/promo/promocean.webp", "hidden": false },
+ { "id": "sedelka", "name": "Sedelka", "img": "assets/img/promo/sedelka.webp", "hidden": false },
+ { "id": "vargo-invest", "name": "Vargo Invest", "img": "assets/img/promo/vargo-invest.webp", "hidden": false },
+ { "id": "vinci-immobilier", "name": "Vinci Immobilier", "img": "assets/img/promo/vinci-immobilier.webp", "hidden": false } ];

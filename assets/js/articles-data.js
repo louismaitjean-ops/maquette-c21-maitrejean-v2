@@ -1,0 +1,278 @@
+/* Starting articles of the « Actualités » blog, used until Raphaël publishes his own from the admin.
+   hidden: true = draft ready to publish from the admin (the eye button; the date becomes the publication day).
+   name = title; body = paragraphs, a line starting with "## " is a subheading. */
+window.ARTICLES = [
+  {
+    id: 'vendre-en-viager-chartres-etapes',
+    name: 'Vendre en viager à Chartres : les étapes clés',
+    cat: 'Viager',
+    date: '2026-11-05',
+    img: 'assets/img/v-cath.jpg',
+    excerpt: "De la première estimation à la signature chez le notaire : le déroulé d'une vente en viager à Chartres et les points à préparer pour la sécuriser.",
+    body: [
+      "Vendre son logement en viager permet de compléter ses revenus tout en pouvant, dans le cas d'un viager occupé, rester chez soi. C'est une décision importante, qui se prépare par étapes et se réfléchit souvent en famille. Voici comment se déroule une vente, de la première question jusqu'à la signature.",
+      "## Faire le point sur votre projet",
+      "La première étape consiste à clarifier vos besoins : souhaitez-vous rester dans le logement ou le libérer, disposer d'un capital important ou d'un revenu mensuel plus élevé, protéger votre conjoint ? Ces choix orientent toute la suite. Il est utile d'en parler tôt avec vos proches et votre notaire, afin que chacun comprenne le projet.",
+      "## Estimer la valeur du bien",
+      "Tout part de la valeur libre, c'est-à-dire le prix du logement sur le marché s'il était vendu sans viager. Elle dépend de l'emplacement, de l'état du bien, de sa surface et des ventes récentes dans le secteur. À Chartres, les écarts peuvent être sensibles d'un quartier à l'autre, d'où l'intérêt d'une estimation sérieuse sur place.",
+      "## Calculer le bouquet et la rente",
+      "Dans un viager occupé, on déduit de la valeur libre le droit d'usage et d'habitation, qui dépend notamment de l'âge du vendeur. Le montant obtenu se répartit entre le bouquet, versé le jour de la vente, et la rente, versée ensuite chaque mois. La répartition se discute : un bouquet plus élevé réduit la rente, et inversement.",
+      "## Trouver un acquéreur et négocier",
+      "L'annonce précise le type de viager, l'âge et le nombre de têtes, le bouquet et la rente. Les acquéreurs intéressés visitent le bien, puis les conditions sont négociées : indexation de la rente, répartition des charges et des travaux, réversion éventuelle au profit du conjoint.",
+      "## Signer chez le notaire",
+      "La vente se conclut par un acte authentique. Celui-ci fixe les obligations de chacun, et il peut prévoir une clause résolutoire en cas de rente impayée, ainsi qu'une indexation de la rente. Faites-vous expliquer chaque clause avant de signer, car elles protègent le vendeur pendant toute la durée du contrat.",
+      "Raphaël Lecoeur, notre conseiller, étudie gratuitement votre situation et vous remet notre guide du viager. Chaque projet est différent : seul votre notaire peut confirmer les conséquences juridiques et fiscales de votre vente."
+    ],
+    hidden: false
+  },
+  {
+    id: 'rente-viagere-imposition',
+    name: 'Rente viagère : comment est-elle imposée ?',
+    cat: 'Viager',
+    date: '2026-11-05',
+    img: 'assets/img/v-band.jpg',
+    excerpt: "Seule une partie de la rente est imposable, selon votre âge au moment de la vente. Le barème, le cas du bouquet et les points à vérifier avec votre notaire.",
+    body: [
+      "Quand on vend en viager, la question de l'impôt revient vite. Bonne nouvelle pour le vendeur : la rente n'est pas imposée en totalité, et le bouquet suit des règles différentes. Voici les grands principes à connaître avant de s'engager.",
+      "## Une fraction de la rente seulement",
+      "La rente viagère versée en contrepartie d'une vente est imposable pour une partie de son montant seulement. Cette fraction dépend de l'âge du vendeur au moment où la rente commence à être versée : 70 % avant 50 ans, 50 % de 50 à 59 ans, 40 % de 60 à 69 ans et 30 % à partir de 70 ans.",
+      "Un exemple simple : pour une personne de 75 ans à la signature qui perçoit 12 000 € de rente par an, seuls 3 600 € sont à ajouter à ses revenus imposables. Cette fraction est fixée une fois pour toutes : elle ne change pas quand le vendeur avance en âge.",
+      "## Les prélèvements sociaux",
+      "La part imposable supporte aussi les prélèvements sociaux, au taux de 17,2 % selon les informations notariales publiées. Ce taux peut évoluer d'une année à l'autre : vérifiez le chiffre en vigueur au moment de votre projet.",
+      "## Le bouquet",
+      "Le bouquet est un élément du prix de vente. Il n'entre pas, en principe, dans vos revenus soumis à l'impôt sur le revenu. Si le logement vendu est votre résidence principale, la plus-value est en outre exonérée. Pour une résidence secondaire ou un bien locatif, une plus-value peut être due : votre notaire la calcule au moment de la vente.",
+      "## Le viager sur deux têtes",
+      "Lorsque la vente est réalisée par un couple avec réversion de la rente, l'âge à retenir pour le barème mérite une vérification, car il dépend de la situation et de la rédaction de l'acte. C'est un point à faire préciser par votre notaire ou par votre centre des impôts, avant la signature.",
+      "## Ce qu'il faut retenir",
+      "Le viager offre un revenu dont une partie seulement est imposée, d'autant plus faible que le vendeur est âgé. La fiscalité ne doit pourtant pas être le seul critère : les besoins du vendeur, sa santé et sa famille comptent tout autant.",
+      "Cet article donne des repères généraux et ne remplace pas un conseil personnalisé. Raphaël Lecoeur, notre conseiller, peut vous aider à préparer votre projet, en lien avec votre notaire."
+    ],
+    hidden: false
+  },
+  {
+    id: 'acheter-sur-plan-vefa-chartres',
+    name: 'Acheter sur plan à Chartres : les étapes de la VEFA',
+    cat: 'Immobilier neuf',
+    date: '2026-11-05',
+    img: 'assets/img/n-hero.jpg',
+    excerpt: "Réservation, délai de rétractation, acte chez le notaire, appels de fonds, livraison : le déroulé complet d'un achat sur plan dans un programme neuf.",
+    body: [
+      "Acheter sur plan, c'est signer pour un logement qui n'est pas encore construit. Ce mode d'achat s'appelle la vente en l'état futur d'achèvement, ou VEFA. Il est très encadré par la loi, mais son déroulé surprend souvent lors d'un premier achat. Voici les étapes, dans l'ordre.",
+      "## Le contrat de réservation",
+      "Une fois le logement choisi, vous signez un contrat de réservation. Il décrit le logement, ses surfaces, le prix prévisionnel et la date de livraison envisagée. Vous versez généralement un dépôt de garantie : il est plafonné à 5 % du prix si la vente est signée dans l'année, et à 2 % si elle intervient entre un et deux ans. Vous disposez ensuite d'un délai de rétractation de dix jours.",
+      "## Le financement",
+      "Le contrat prévoit habituellement un délai pour obtenir votre prêt. C'est le moment de monter votre plan de financement avec votre banque ou un courtier, et de vérifier si vous avez droit au prêt à taux zéro. Dans le neuf, les frais de notaire sont réduits, ce qui allège l'apport nécessaire.",
+      "## L'acte chez le notaire",
+      "Le notaire vous adresse le projet d'acte, avec les plans et la notice descriptive. Prenez le temps de les comparer au contrat de réservation. Vous devenez ensuite propriétaire au fur et à mesure de la construction.",
+      "## Les appels de fonds",
+      "Vous payez selon l'avancement du chantier, dans des limites fixées par la loi : au maximum 35 % à l'achèvement des fondations, 70 % à la mise hors d'eau et 95 % à l'achèvement. Le solde est versé à la remise des clés. La banque débloque votre prêt à chaque étape, et les intérêts augmentent progressivement.",
+      "## La livraison",
+      "Le jour de la livraison, vous visitez le logement avec le promoteur et vous notez chaque défaut sur le procès-verbal. Vous pouvez aussi signaler les défauts apparents dans le mois qui suit la remise des clés. En cas de réserves, vous pouvez consigner le solde du prix jusqu'à leur levée.",
+      "Raphaël Lecoeur, notre conseiller, vous accompagne dans le choix de votre programme neuf à Chartres et répond à vos questions à chaque étape. Votre notaire reste votre interlocuteur pour le contrat et son échéancier exact, qui peut varier selon le programme."
+    ],
+    hidden: false
+  },
+  {
+    id: 'garanties-logement-neuf',
+    name: 'Logement neuf : les garanties qui protègent l\'acheteur',
+    cat: 'Immobilier neuf',
+    date: '2026-11-05',
+    img: 'assets/img/prog/le-parvis-des-lumieres/01.jpg',
+    excerpt: "Garantie d'achèvement, parfait achèvement, biennale, décennale, dommages-ouvrage : ce que couvre chaque garantie quand on achète un logement neuf.",
+    body: [
+      "Acheter un logement sur plan peut inquiéter : que se passe-t-il si le chantier s'arrête, ou si un défaut apparaît après l'emménagement ? La loi prévoit plusieurs garanties, chacune avec son rôle et sa durée. Les connaître aide à réagir à temps.",
+      "## Avant la livraison : la garantie financière d'achèvement",
+      "Le promoteur doit souscrire une garantie financière d'achèvement auprès d'une banque ou d'un assureur. Si le promoteur fait défaut, le garant finance la fin des travaux. Elle ne rembourse pas l'acheteur : elle assure que le logement sera terminé. Le notaire vérifie son existence au moment de la vente.",
+      "## La première année : le parfait achèvement",
+      "Pendant un an après la réception des travaux, l'entreprise doit réparer tous les désordres signalés, qu'ils aient été notés à la livraison ou apparus ensuite. Signalez chaque problème par écrit et sans attendre, en gardant une preuve de votre envoi.",
+      "## Deux ans : le bon fonctionnement",
+      "La garantie biennale couvre pendant deux ans les équipements qui peuvent être démontés sans abîmer le bâtiment : volets, robinetterie ou ballon d'eau chaude, par exemple.",
+      "## Dix ans : la garantie décennale",
+      "La garantie décennale couvre pendant dix ans les dommages qui compromettent la solidité du bâtiment ou le rendent impropre à son usage : fissures importantes, infiltrations, problème de fondations. Elle s'accompagne de l'assurance dommages-ouvrage, qui permet d'être indemnisé plus rapidement, sans attendre de savoir qui est responsable.",
+      "## Les bons réflexes à la livraison",
+      "Le jour de la remise des clés, prenez votre temps. Vérifiez chaque pièce, les prises, les fenêtres et les équipements prévus dans la notice descriptive, puis faites inscrire tout défaut sur le procès-verbal. Vous disposez aussi d'un mois après la prise de possession pour signaler les défauts apparents. Conservez ensuite précieusement le procès-verbal et les courriers.",
+      "Pour un programme neuf à Chartres et dans ses environs, Raphaël Lecoeur, notre conseiller, vous aide à comprendre ces étapes. Votre notaire et votre assureur peuvent confirmer ce qui s'applique précisément à votre logement."
+    ],
+    hidden: true
+  },
+  {
+    id: 'investir-ancien-chartres-denormandie-malraux',
+    name: 'Investir dans l\'ancien : Denormandie, Malraux, déficit foncier',
+    cat: 'Patrimoine',
+    date: '2026-11-05',
+    img: 'assets/img/d6.jpg',
+    excerpt: "Rénover un logement ancien pour le louer peut réduire vos impôts. Les principes de trois dispositifs, leurs conditions et les points à vérifier avant d'acheter.",
+    body: [
+      "Investir dans l'ancien à rénover attire de nombreux épargnants, notamment dans les villes au riche patrimoine comme Chartres. Trois dispositifs reviennent souvent. Ils n'ont ni les mêmes conditions ni les mêmes avantages, et le bon choix dépend de votre imposition et de l'immeuble visé.",
+      "## Le dispositif Denormandie",
+      "Il s'adresse à ceux qui achètent un logement ancien à rénover dans certaines communes, afin de le louer nu à un loyer plafonné. Les travaux doivent représenter au moins 25 % du coût total de l'opération. La réduction d'impôt atteint 12 %, 18 % ou 21 % selon la durée de location, de 6, 9 ou 12 ans, dans la limite de 300 000 € d'investissement. Il est prévu jusqu'au 31 décembre 2027. L'éligibilité dépend de la commune et parfois de l'adresse précise : à vérifier avant tout engagement.",
+      "## Le dispositif Malraux",
+      "Il concerne la restauration complète d'immeubles situés dans un secteur protégé. La réduction d'impôt porte sur le montant des travaux, à 22 % ou 30 % selon le secteur, avec un plafond de 400 000 € de travaux sur quatre ans. Le logement doit être loué nu pendant au moins neuf ans. C'est un dispositif exigeant, réservé à des opérations encadrées.",
+      "## Le déficit foncier",
+      "Il ne dépend pas d'une zone. Si vous louez un logement nu et que vos charges, travaux compris, dépassent vos loyers, le déficit peut être déduit de votre revenu global jusqu'à 10 700 € par an, le surplus étant reporté sur vos revenus fonciers des années suivantes. Il faut en contrepartie continuer à louer le bien pendant trois ans.",
+      "## Comment choisir",
+      "Commencez par la qualité de l'immeuble et de l'emplacement : un avantage fiscal ne compense jamais un bien difficile à louer ou à revendre. Regardez ensuite votre taux d'imposition, votre capacité à porter les travaux et la durée pendant laquelle vous pouvez immobiliser votre épargne.",
+      "Les règles fiscales évoluent chaque année avec la loi de finances. Faites confirmer les conditions en vigueur par votre notaire ou votre conseiller fiscal. Raphaël Lecoeur, notre conseiller en immobilier patrimonial, peut étudier votre projet à Chartres et vous orienter."
+    ],
+    hidden: true
+  },
+  {
+    id: 'viager-ou-nue-propriete',
+    name: 'Viager ou nue-propriété : quelles différences ?',
+    cat: 'Patrimoine',
+    date: '2026-11-05',
+    img: 'assets/img/d3.jpg',
+    excerpt: "Deux façons d'acheter un bien moins cher en dissociant son usage et sa propriété. Fonctionnement, durée, paiement : ce qui distingue le viager de la nue-propriété.",
+    body: [
+      "Le viager et la nue-propriété ont un point commun : l'acquéreur achète un bien sans en profiter tout de suite, à un prix inférieur à sa valeur libre. Ce sont pourtant deux opérations très différentes, qui ne répondent pas aux mêmes objectifs.",
+      "## Le fonctionnement du viager",
+      "En viager occupé, le vendeur reste chez lui et l'acquéreur verse un bouquet à la signature, puis une rente mensuelle jusqu'au décès du vendeur. La durée n'est donc pas connue à l'avance, et le coût final dépend de la durée de vie du vendeur. C'est l'aléa propre au viager, qui est la nature même de ce contrat.",
+      "## Le fonctionnement de la nue-propriété",
+      "L'acheteur acquiert uniquement la nue-propriété, tandis qu'un autre garde l'usufruit : le droit d'occuper le logement ou d'en percevoir les loyers. Le prix est payé en une fois. Quand l'usufruit s'éteint, l'acheteur devient plein propriétaire, sans frais supplémentaires. Si l'usufruit est temporaire, par exemple quinze ou vingt ans, la date de récupération du bien est connue dès le départ.",
+      "## Ce qui les distingue pour l'acheteur",
+      "Le viager s'étale dans le temps : un bouquet, puis des mensualités, ce qui peut convenir à des revenus réguliers. La nue-propriété demande un financement au départ, mais elle n'entraîne plus de versement ensuite et, pendant la durée de l'usufruit, elle ne génère pas de revenu ni, en général, de charges courantes. L'acquéreur prépare ainsi sa retraite ou une transmission.",
+      "## Ce qui les distingue pour le vendeur",
+      "Le viager s'adresse surtout à des personnes âgées qui veulent compléter leurs revenus tout en restant chez elles. La nue-propriété permet quant à elle de disposer d'un capital, soit en vendant la nue-propriété de son logement, soit dans le cadre d'une transmission à ses enfants. Dans les deux cas, l'occupation du logement peut être conservée.",
+      "## Comment se décider",
+      "Posez-vous trois questions : quel est votre objectif, de quel horizon disposez-vous, et comment souhaitez-vous payer ? Les conséquences fiscales et successorales diffèrent aussi, et doivent être vérifiées avec un notaire pour votre situation précise.",
+      "Raphaël Lecoeur, notre conseiller en immobilier patrimonial, vous aide à comparer ces solutions à Chartres et en Eure-et-Loir, et vous remet notre guide du viager."
+    ],
+    hidden: true
+  },
+  {
+    id: 'ptz-logement-neuf-chartres',
+    name: 'Prêt à taux zéro : acheter un logement neuf à Chartres',
+    cat: 'Immobilier neuf',
+    date: '2026-11-04',
+    img: 'assets/img/n-living.jpg',
+    excerpt: "Conditions, logements concernés, montage du financement : ce qu'il faut savoir sur le prêt à taux zéro pour un premier achat dans le neuf à Chartres.",
+    body: [
+      "Le prêt à taux zéro, ou PTZ, aide les ménages qui achètent leur première résidence principale. Il finance une partie du logement sans intérêts, ce qui peut changer l'équilibre d'un budget. Voici l'essentiel pour un projet dans le neuf à Chartres et dans son agglomération.",
+      "## Un dispositif ouvert à tout le neuf",
+      "Depuis le 1er avril 2025, le PTZ concerne tous les logements neufs, appartements comme maisons, sur l'ensemble du territoire. Il est prévu jusqu'au 31 décembre 2027. Les programmes neufs de Chartres, de Luisant, de Champhol ou du Coudray peuvent donc être concernés, sous réserve que l'acheteur remplisse les conditions.",
+      "## Qui peut en bénéficier ?",
+      "Trois conditions principales s'appliquent. Il faut ne pas avoir été propriétaire de sa résidence principale au cours des deux dernières années, sauf exceptions. Le logement doit devenir votre résidence principale. Enfin, vos revenus ne doivent pas dépasser un plafond qui dépend de la composition du foyer et de la zone du logement.",
+      "## Ce que le PTZ finance, et ce qu'il ne finance pas",
+      "Le PTZ ne couvre qu'une partie du prix : le montant dépend de vos revenus, de la zone et du type de logement. Il doit être complété par un autre prêt, et il ne finance pas les frais de notaire. La durée et le différé de remboursement varient eux aussi selon les revenus.",
+      "## Comment préparer son dossier",
+      "Rassemblez votre dernier avis d'imposition et vos justificatifs de revenus, puis faites une simulation avec votre banque ou un courtier. Les plafonds et les montants évoluent : seul l'établissement prêteur peut confirmer votre droit au PTZ et le montant accordé.",
+      "Raphaël Lecoeur, notre conseiller, vous aide à choisir un programme adapté à votre budget à Chartres et vous oriente pour le plan de financement. Vous pouvez aussi demander notre guide de l'immobilier neuf."
+    ],
+    hidden: false
+  },
+  {
+    id: 'viager-occupe-ou-libre',
+    name: 'Viager occupé ou libre : quelle formule choisir à Chartres ?',
+    cat: 'Viager',
+    date: '2026-11-03',
+    img: 'assets/img/v-cath.jpg',
+    excerpt: "Rester chez soi ou libérer le logement : les différences entre viager occupé et viager libre, pour le vendeur comme pour l'acquéreur à Chartres.",
+    body: [
+      "En viager, le vendeur cède son bien contre un bouquet et une rente. Deux formules existent, et le choix dépend d'abord d'une question simple : le vendeur souhaite-t-il continuer à vivre dans le logement ? À Chartres comme ailleurs, la réponse change les montants et les obligations de chacun.",
+      "## Le viager occupé : rester chez soi",
+      "C'est la formule la plus courante. Le vendeur conserve un droit d'usage et d'habitation : il reste chez lui, le plus souvent jusqu'à la fin de sa vie. Comme l'acquéreur ne peut ni habiter ni louer le bien, le prix tient compte de cette occupation et il est inférieur à la valeur libre.",
+      "## Le viager libre : un capital et une rente plus élevés",
+      "Dans un viager libre, le logement est disponible dès la vente. L'acquéreur peut y habiter ou le mettre en location. Le bouquet et la rente sont calculés sur la valeur libre, donc généralement plus élevés. Cette formule convient par exemple à un vendeur qui rejoint une résidence services ou s'installe près de ses proches.",
+      "## Côté vendeur : quelles questions se poser ?",
+      "Avez-vous besoin d'un capital immédiat ou d'un revenu régulier ? Souhaitez-vous rester dans votre quartier ? Votre logement restera-t-il adapté dans dix ans ? Parlez-en à vos proches et faites-vous conseiller : le notaire rédige l'acte et sécurise notamment le sort de la rente en cas d'impayé.",
+      "## Côté acquéreur : un achat à long terme",
+      "Acheter en viager permet de constituer un patrimoine sans emprunt important, avec un paiement étalé dans le temps. Il faut toutefois être capable de verser la rente sur une durée inconnue : c'est l'aléa propre au viager. Le dossier doit donc être étudié avec soin.",
+      "Notre agence estime le bien, calcule un bouquet et une rente cohérents et recherche l'acquéreur à Chartres et en Eure-et-Loir. Raphaël Lecoeur répond à vos questions et peut vous remettre notre guide du viager."
+    ],
+    hidden: false
+  },
+  {
+    id: 'investir-chartres-location-nue-ou-meublee',
+    name: 'Investir à Chartres : location nue ou meublée ?',
+    cat: 'Patrimoine',
+    date: '2026-11-02',
+    img: 'assets/img/s-cath.jpg',
+    excerpt: "Loyer, fiscalité, durée du bail, gestion : les critères pour choisir entre location nue et meublée lors d'un investissement locatif à Chartres.",
+    body: [
+      "Vous souhaitez investir dans l'immobilier à Chartres ? Avant de choisir le bien, il faut décider comment le louer. Location nue ou meublée : les deux formules n'ont ni le même bail, ni la même fiscalité, ni les mêmes locataires.",
+      "## Chartres, une ville à regarder de près",
+      "Préfecture de l'Eure-et-Loir, reliée à Paris en une heure environ par le train, Chartres attire aussi bien des actifs que des familles et des étudiants. La demande varie toutefois selon les quartiers et les surfaces : un studio près de la gare ne s'adresse pas aux mêmes locataires qu'une maison en périphérie.",
+      "## La location nue : la stabilité",
+      "Le bail dure en principe trois ans lorsque le propriétaire est un particulier. Les locataires restent souvent plus longtemps, ce qui limite la vacance et la gestion. Les loyers perçus sont imposés dans la catégorie des revenus fonciers. Selon les travaux réalisés, le déficit foncier peut réduire l'imposition.",
+      "## La location meublée : un loyer souvent plus élevé",
+      "Le bail dure en général un an, ou neuf mois pour un étudiant. Le logement doit comporter le mobilier prévu par la réglementation. Les loyers relèvent des bénéfices industriels et commerciaux : c'est le statut de loueur en meublé non professionnel (LMNP). Au régime réel, l'amortissement peut réduire fortement l'impôt, mais les règles de plus-value ont été durcies par la loi de finances 2025 : les amortissements déduits sont désormais pris en compte lors de la revente, sauf exceptions.",
+      "## Comment trancher ?",
+      "Tout dépend de votre objectif : revenu immédiat, préparation de la retraite ou transmission. Comparez le rendement après impôt plutôt que le seul loyer, et tenez compte du temps que vous pourrez consacrer à la gestion. La fiscalité évolue régulièrement : validez votre choix auprès d'un expert-comptable ou d'un conseiller fiscal.",
+      "Notre équipe vous aide à identifier les biens et les secteurs adaptés à votre projet à Chartres. Découvrez nos solutions patrimoniales ou contactez Raphaël Lecoeur pour en parler."
+    ],
+    hidden: false
+  },
+  {
+    id: 'viager-bouquet-et-rente',
+    name: 'Viager : comment sont calculés le bouquet et la rente ?',
+    cat: 'Viager',
+    date: '2026-10-28',
+    img: 'assets/img/s-woman.jpg',
+    excerpt: "Valeur du bien, âge du vendeur, droit d'usage : les éléments qui fixent le bouquet versé à la signature et la rente versée chaque mois.",
+    body: [
+      "Vendre en viager, c'est céder son bien tout en percevant un capital à la signature, le bouquet, puis un revenu à vie, la rente. Les deux montants ne sont pas fixés au hasard : ils découlent d'un calcul précis, que nous réalisons pour chaque vendeur.",
+      "## Le point de départ : la valeur libre du bien",
+      "Tout commence par une estimation sérieuse du bien, comme pour une vente classique : emplacement, surface, état, prix des ventes récentes dans le quartier. C'est la valeur libre, c'est-à-dire la valeur du bien s'il était vendu sans occupant.",
+      "## Le droit d'usage et d'habitation",
+      "Dans un viager occupé, le vendeur continue de vivre chez lui. Ce droit d'usage a une valeur, qui dépend de son espérance de vie, et donc de son âge. On la déduit de la valeur libre pour obtenir la valeur occupée du bien, qui est la base du bouquet et de la rente.",
+      "## Partager entre bouquet et rente",
+      "La valeur occupée se répartit entre le bouquet et la rente. Un bouquet important réduit la rente, et inversement : tout dépend des besoins du vendeur, qui peut préférer disposer d'un capital immédiat ou d'un complément de revenu régulier. La rente est indexée chaque année, ce qui protège son pouvoir d'achat.",
+      "## Viager occupé ou viager libre",
+      "Dans un viager libre, l'acquéreur peut occuper ou louer le bien dès la vente. Il n'y a donc pas de droit d'usage à déduire : le bouquet et la rente sont calculés sur la valeur libre, ce qui les rend plus élevés. Cette formule convient par exemple à un propriétaire qui part en résidence services ou chez un proche.",
+      "## Ce que le vendeur doit prévoir",
+      "Le vendeur d'un viager occupé continue généralement de payer les charges courantes et la taxe d'habitation s'il y est soumis, tandis que l'acquéreur prend en charge les gros travaux et la taxe foncière. La répartition exacte est fixée dans l'acte de vente, chez le notaire, et mérite d'être expliquée en amont.",
+      "Chaque situation est différente. Raphaël Lecoeur, notre conseiller en immobilier patrimonial, réalise gratuitement une simulation à partir de votre bien et de votre situation."
+    ],
+    hidden: false
+  },
+  {
+    id: 'frais-de-notaire-reduits-neuf',
+    name: 'Acheter dans le neuf : des frais de notaire réduits',
+    cat: 'Immobilier neuf',
+    date: '2026-10-21',
+    img: 'assets/img/n-hero.jpg',
+    excerpt: "Dans le neuf, les frais d'acquisition représentent environ 2 à 3 % du prix, contre 7 à 8 % dans l'ancien. Explications et exemple chiffré.",
+    body: [
+      "On parle souvent de « frais de notaire », mais il s'agit surtout de taxes reversées à l'État et aux collectivités. Leur montant change beaucoup selon que le logement est neuf ou ancien.",
+      "## Pourquoi c'est moins cher dans le neuf",
+      "Lors de l'achat d'un logement neuf, la TVA est déjà comprise dans le prix de vente. Les droits de mutation sont alors très réduits. Au total, les frais d'acquisition représentent en général 2 à 3 % du prix, contre 7 à 8 % pour un logement ancien.",
+      "## Un écart qui compte dans le budget",
+      "Sur un appartement à 250 000 €, la différence peut dépasser 10 000 €. Cette économie peut servir à réduire l'emprunt, à financer l'aménagement ou à augmenter l'apport.",
+      "## Les autres avantages du neuf",
+      "Garanties constructeur, performance énergétique conforme aux dernières normes, pas de travaux à prévoir : le neuf rassure aussi sur le long terme. Selon votre situation, un prêt à taux zéro peut compléter le financement.",
+      "## Les étapes d'un achat en VEFA",
+      "La plupart des logements neufs se vendent sur plan, en vente en l'état futur d'achèvement (VEFA). Après la réservation et le versement d'un dépôt de garantie, l'acte authentique est signé chez le notaire. Le prix est ensuite payé par étapes, au fil de l'avancement du chantier, jusqu'à la remise des clés. Ce calendrier de paiement échelonné allège aussi les intérêts intercalaires.",
+      "## Bien choisir son programme",
+      "Emplacement, orientation, étage, place de stationnement, espaces extérieurs : prenez le temps de comparer. À Chartres et dans l'agglomération, plusieurs programmes sont en cours de commercialisation, du studio pour investir à la maison familiale avec jardin.",
+      "Notre conseiller vous accompagne à chaque étape : choix du lot, plan de financement avec votre banque ou un courtier, lecture du contrat de réservation et suivi jusqu'à la livraison. Pour un investissement locatif, il vous aide aussi à estimer le loyer et la fiscalité.",
+      "Découvrez nos programmes neufs à Chartres et dans l'agglomération, ou demandez notre guide de l'immobilier neuf."
+    ],
+    hidden: false
+  },
+  {
+    id: 'bien-preparer-estimation',
+    name: 'Faire estimer son bien : ce qui compte vraiment',
+    cat: 'Conseils',
+    date: '2026-10-14',
+    img: 'assets/img/a-door.jpg',
+    excerpt: "Emplacement, état, ventes récentes du quartier : les critères qui fondent une estimation juste, et comment bien la préparer.",
+    body: [
+      "Une estimation juste est la clé d'une vente réussie. Trop haute, elle fait fuir les acquéreurs ; trop basse, elle vous fait perdre de l'argent. Voici les critères qui comptent vraiment.",
+      "## L'emplacement",
+      "Quartier, proximité des commerces, des écoles et de la gare, exposition, vue : l'emplacement reste le premier critère de prix, à Chartres comme ailleurs.",
+      "## L'état du bien et ses performances",
+      "Travaux à prévoir, qualité des matériaux, diagnostic de performance énergétique : un bien bien entretenu et économe en énergie se vend plus vite et à meilleur prix.",
+      "## Les ventes récentes",
+      "Une estimation sérieuse s'appuie sur les prix réellement constatés pour des biens comparables dans votre secteur, pas seulement sur les annonces en ligne.",
+      "## Comment la préparer",
+      "## Estimation en ligne ou visite d'un conseiller ?",
+      "Les simulateurs en ligne donnent un ordre de grandeur, mais ils ne voient ni la luminosité, ni l'état réel des pièces, ni le calme de la rue. Seule une visite permet de tenir compte de ces éléments, qui font souvent la différence de prix entre deux biens d'apparence comparable.",
+      "## Les petits travaux qui valorisent",
+      "Avant de mettre en vente, quelques interventions simples aident à présenter le bien sous son meilleur jour : désencombrer, rafraîchir une peinture, réparer ce qui est abîmé, soigner l'entrée et le jardin. Inutile en revanche d'engager de gros travaux sans avis : ils ne sont pas toujours valorisés au prix qu'ils coûtent.",
+      "## Fixer le bon prix de mise en vente",
+      "Un bien affiché au juste prix suscite des visites dès les premières semaines, période où l'annonce est la plus regardée. À l'inverse, un prix trop ambitieux oblige souvent à des baisses successives, qui inquiètent les acheteurs et finissent par allonger le délai de vente.",
+      "Rassemblez vos diagnostics, votre taxe foncière, les factures de travaux récents et, en copropriété, les derniers procès-verbaux d'assemblée générale. Notre agence vous propose une estimation gratuite et sans engagement."
+    ],
+    hidden: false
+  }
+];
